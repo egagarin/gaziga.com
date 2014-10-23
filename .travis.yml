@@ -9,7 +9,7 @@ before_install:
 - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
 - gem install bundler
 - bundle install
-- npm install gulp
+- npm install
 script:
 - gulp deploy
 env:
