@@ -28,3 +28,5 @@ node_modules
 /src/bower_components
 
 /static
+
+/.awspublish-new.gaziga.com

@@ -113,27 +113,29 @@ gulp.task('deploy', function () {
   var credentials = {
     "key": process.env.AWS_S3_KEY,
     "secret": process.env.AWS_S3_SECRET,
-    "bucket": "new.gaziga.com",
-    "region": "us-west-1",
-    "distributionId": "E1P667PTE7ROTP"
+    "bucket": "new.gaziga.com"
+    //"region": "us-west-1",
+    //"distributionId": "E1P667PTE7ROTP"
   };
 
   var publisher = $.awspublish.create(credentials);
+
   var headers = {
     'Cache-Control': 'max-age=315360000, no-transform, public',
     'Content-Encoding': 'gzip'
   };
   gulp.src('site/**/*')
+    .pipe($.plumber())
     // Parallelize the number of concurrent uploads, in this case 30
     .pipe(parallelize(publisher.publish(headers), 30))
     // Have your files in the system cache so you don't have to recheck all the files every time
     .pipe(publisher.cache())
     // Synchronize the contents of the bucket and local (this deletes everything that isn't in local!)
-    //.pipe(publisher.sync()) //leave cached references
+    .pipe(publisher.sync()) //leave cached references
     // And print the ouput, glorious
-    .pipe($.awspublish.reporter())
+    .pipe($.awspublish.reporter());
     // And update the default root object
-    .pipe($.cloudfront(credentials));
+    //.pipe($.cloudfront(credentials));
 });
 
 // Run JS Lint against your JS

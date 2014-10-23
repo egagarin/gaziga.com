@@ -11,6 +11,8 @@ before_install:
 - bundle install
 - npm install
 script:
+- gulp build
+after_success:
 - gulp deploy
 env:
   global:
