@@ -1,0 +1,9 @@
+ <li>
+    <a class='year icon-down-open-mini' href="#">{{year[0]}}</a>
+    <ul class="months" style='display: block'>
+    {% assign by_month = year[1] | group_by_date: 'month' %}
+    {% for month in by_month%}
+        {% include archive/archive_month.html %}
+    {% endfor %}
+    </ul>
+</li>

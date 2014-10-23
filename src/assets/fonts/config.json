@@ -1,0 +1,142 @@
+{
+    "name": "gaziga",
+    "css_prefix_text": "icon-",
+    "css_use_suffix": false,
+    "hinting": true,
+    "units_per_em": 1000,
+    "ascent": 850,
+    "glyphs": [
+        {
+            "uid": "559647a6f430b3aeadbecd67194451dd",
+            "css": "menu",
+            "code": 59301,
+            "src": "fontawesome"
+        },
+        {
+            "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+            "css": "search",
+            "code": 59302,
+            "src": "fontawesome"
+        },
+        {
+            "uid": "ca2d64f8a3ea7cbf6af45898b2dcf35e",
+            "css": "male",
+            "code": 59303,
+            "src": "fontawesome"
+        },
+        {
+            "uid": "9bf7e14698cccdca37a6f1a02cf7d79e",
+            "css": "female",
+            "code": 59304,
+            "src": "fontawesome"
+        },
+        {
+            "uid": "0d08dbb1dd648a43bdea81b7e6c9e036",
+            "css": "location",
+            "code": 59305,
+            "src": "fontawesome"
+        },
+        {
+            "uid": "e335adbc2d898c7d85d40c507796e7b4",
+            "css": "mail",
+            "code": 59306,
+            "src": "entypo"
+        },
+        {
+            "uid": "85017ab6ca074831a8de771b40e9640c",
+            "css": "camera",
+            "code": 59307,
+            "src": "entypo"
+        },
+        {
+            "uid": "f11c9e95ae5eaa84d193e8fa1d38c6f9",
+            "css": "down-open-mini",
+            "code": 59308,
+            "src": "entypo"
+        },
+        {
+            "uid": "37f6cfbb4062ed0d01b351ec35c334ff",
+            "css": "right-open-mini",
+            "code": 59309,
+            "src": "entypo"
+        },
+        {
+            "uid": "4efb719e797c54b3c58e5ae061d29d53",
+            "css": "droplet",
+            "code": 59310,
+            "src": "entypo"
+        },
+        {
+            "uid": "4a413ef43c364dafa42766e74c31bbca",
+            "css": "cc",
+            "code": 59311,
+            "src": "entypo"
+        },
+        {
+            "uid": "72681d2825fef7fd83711278f845547b",
+            "css": "cc-by",
+            "code": 59312,
+            "src": "entypo"
+        },
+        {
+            "uid": "7540520e12e941839cdb7d76b12e82a8",
+            "css": "cc-nc",
+            "code": 59313,
+            "src": "entypo"
+        },
+        {
+            "uid": "244d3253e3ca5a0d602dd3574050fe93",
+            "css": "campsite",
+            "code": 59314,
+            "src": "maki"
+        },
+        {
+            "uid": "878dccd7b810bc231a132d86a3028afe",
+            "css": "tree",
+            "code": 59315,
+            "src": "maki"
+        },
+        {
+            "uid": "d089814548af1441aa00ecec47851f38",
+            "css": "fivehundredpx",
+            "code": 59316,
+            "src": "zocial"
+        },
+        {
+            "uid": "6f7586c6f99798c3c1de6123d1f6cfa9",
+            "css": "facebook-light",
+            "code": 59317,
+            "src": "zocial"
+        },
+        {
+            "uid": "b49fa3e57e92b38143e0fdcc5d9a904b",
+            "css": "gmail",
+            "code": 59318,
+            "src": "zocial"
+        },
+        {
+            "uid": "d881e6436253ef6cffe0f3fb10562643",
+            "css": "rss",
+            "code": 59319,
+            "src": "elusive"
+        },
+        {
+            "uid": "dc73bee1d58539abe8c96b958bf4c931",
+            "css": "fire",
+            "code": 59320,
+            "src": "elusive"
+        },
+        {
+            "uid": "c99e966e3d22ec0b9d8678fd524e5512",
+            "css": "facebook",
+            "code": 59393,
+            "src": "elusive"
+        },
+        {
+            "uid": "23710230c21b4af140947e3604cc67a5",
+            "css": "comment",
+            "code": 59394,
+            "src": "elusive"
+        }
+    ]
+}

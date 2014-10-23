@@ -1,0 +1,10 @@
+{% strip %}
+{% if include.page %}
+    {% assign categories = include.page.categories %}
+{% else %}
+    {% assign categories = page.categories %}
+{% endif %}
+{% for cat in categories %}
+    <a href='/geo/{{cat}}/'>{{ cat | translate | strip_newlines }}</a>{% unless forloop.last %},{% endunless %}
+{% endfor %}
+{% endstrip %}

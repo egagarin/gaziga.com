@@ -1,0 +1,34 @@
+---
+layout: page
+title: Архив записей
+description:  Все записи
+---
+
+<article class="archive">
+    <div id="tree">
+        <ul class="years">
+            {% assign by_year = site.posts | group_by_date: 'year' %}
+            {% for year in by_year%}
+            {% include archive/archive_year.html %}
+            {% endfor %}
+        </ul>
+    </div>
+</article>
+
+
+{% contentfor scripts %}
+<script>
+    $(function () {
+        $(".year, .month").click(function () {
+            $(this).next("ul.months, ul.posts").toggle(0, function () {
+                if ($(this).is(":hidden")) {
+                    $(this).prev("a.year, a.month").removeClass("icon-down-open-mini").addClass("icon-right-open-mini");
+                }
+                else {
+                    $(this).prev("a.year, a.month").removeClass("icon-right-open-mini").addClass("icon-down-open-mini");
+                }
+            });
+        });
+    });
+</script>
+{% endcontentfor %}

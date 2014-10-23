@@ -1,0 +1,14 @@
+.vco-slider .slider-item .content .content-container {
+    @include has-cover-link;
+}
+
+.slider-item {
+    .content {
+        padding-top: 0;
+    }
+
+    .media-image {
+        img {
+        }
+    }
+}

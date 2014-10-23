@@ -1,0 +1,15 @@
+{% capture url %}{{site.url}}{{page.url}}/{% endcapture %}
+{% capture description %}{{ page.content | markdownify | excerpt | encode_uri_component }}{% endcapture %}
+{% capture image %}http://gaziga.com{{ page.url | furl }}title@2x.jpg{% endcapture %}
+{% capture title %}{{ page.title | encode_uri_component }}{% endcapture %}
+
+
+<div class="share">
+    <label>Поделиться: </label>
+    <a target="_blank" class="btn btn-tweet" href="https://twitter.com/intent/tweet?text={{title}}&url={{url}}">Twitter</a>
+    <a target="_blank" class="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url}}">Facebook</a>
+    <a target="_blank" class="btn btn-google" href="https://plus.google.com/share?url={{url}}">Google+</a>
+    <a target="_blank" class="btn btn-pinterest" href="https://pinterest.com/pin/create/button/?url={{url}}&description={{title}}&media={{image}}">Pinterest</a>
+    <a target="_blank" class="btn btn-vk" href="https://vk.com/share.php?url={{url}}&title={{title}}&description={{description}}&image={{image}}&noparse=true">VK</a>
+</div>
+

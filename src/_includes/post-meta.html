@@ -1,0 +1,15 @@
+<div class="card-meta">
+    <div class="avatar avatar-{{ post.author }}"></div>
+    <div class="card-meta-info-wr">
+        <div class="card-meta-info">{{ post.date | format_date }}</div>
+        <div class="card-meta-author"> <a href="/author/{{ post.author }}/">{{ post.author }}</a> | {%strip%}{% include geo-links.html page=post %}{%endstrip%}</div>
+    </div>
+    <a href="{{ post.url | furl }}#disqus_thread" data-disqus-identifier="{{ post.id | no_slash }}" class="commentsCount" title="Комментарии">
+        &hellip;
+    </a>
+</div>
+
+
+
+
+

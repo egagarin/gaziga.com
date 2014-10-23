@@ -1,0 +1,15 @@
+---
+layout: null
+---
+
+Authors:
+    {% for author in site.data.contacts %}{{ author[1].title }}( {{author[1].full_name }})
+    {% endfor %}
+Generated with:  Jekyll {% version %}
+Design&Dev:      gagarin
+Source code:     https://github.com/gagarych/gaziga.com
+Submit a bug:    https://github.com/gagarych/gaziga.com/issues/new
+Build status:    https://travis-ci.org/gagarych/gaziga.com
+Last build time: {{ site.time }}
+Contact:         {{ site.data.contacts.gagarin.email }}
+

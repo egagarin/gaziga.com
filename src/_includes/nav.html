@@ -1,0 +1,38 @@
+<header class="navigation">
+    <div class="navigation-wrapper">
+        <a href="/" class="logo">
+            <div></div>
+        </a>
+        <a href="" class="navigation-menu-button icon-menu" id="js-mobile-menu"></a>
+        <div class="nav">
+            <ul id="navigation-menu">
+                <li class="nav-link"><a href="/">Новое</a></li>
+                <li class="nav-link"><a href="/archive/">Архив</a></li>
+                <li class="nav-link"><a href="/contact/">Связь</a></li>
+                <li class="nav-link more"><a href="javascript:void(0)">Места</a>
+                    <ul class="submenu">
+                        {% for cat in site.categories %}
+                        <li><a href="/geo/{{cat[0]}}/">{{ cat[0] | translate }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="nav-link">
+                    <a href="/contact/" class="icon-export"></a>
+                </li>
+            </ul>
+
+
+        </div>
+        <!--<div class="navigation-tools">-->
+            <!--<div class="search-bar">-->
+                <!--<div class="search-and-submit">-->
+                    <!--<input type="search" placeholder="Поиск" />-->
+                    <!--<button type="submit" class="icon-search">-->
+
+                        <!--&lt;!&ndash;<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">&ndash;&gt;-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</header>

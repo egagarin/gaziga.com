@@ -1,0 +1,105 @@
+@mixin underscore {
+    border-bottom: 1px solid #e9e9e2;
+    @include ellipsis;
+    padding: 4px 7px 2px 7px;
+    &:hover {
+        border-bottom-color: darken(#e9e9e2, 15);
+    }
+}
+
+.archive {
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .years {
+
+        .months, .posts {
+            padding-left: 20px;
+            @include media($medium-screen) {
+                padding-left: 40px;
+            }
+
+        }
+        @include outer-container;
+        a.year {
+            @include span-columns(12);
+            @include underscore;
+            font-size: $h4-font-size;
+            color: $color-content-light;
+        }
+
+        .months {
+            a.month {
+                @include span-columns(12);
+                @include underscore;
+                font-size: $h4-font-size;
+                color: $color-content-light;
+                margin-bottom: 5px;
+            }
+
+            .posts {
+                .day, .title, .author, .geo {
+                    @include underscore;
+                    display: inline-block;
+                }
+                .day-wr, .title-wr, .author-wr, .geo-wr {
+                    padding: 0 5px;
+                }
+                .day-wr {
+                    @include span-columns(3);
+
+                    @include media($medium-screen) {
+                        @include span-columns(2);
+                    }
+
+                    @include media($large-screen) {
+                        @include span-columns(2);
+                    }
+                }
+
+                .title-wr {
+                    @include span-columns(9);
+                    @include omega();
+                    @include media($medium-screen) {
+                        @include span-columns(6);
+                    }
+
+                    @include media($large-screen) {
+                        @include span-columns(5);
+                    }
+                }
+
+                .author-wr {
+                    display: none;
+                    text-align: right;
+                    padding-right: 0;
+
+                    @include media($medium-screen) {
+                        @include span-columns(4);
+                        @include omega();
+                    }
+
+                    @include media($large-screen) {
+                        @include span-columns(2);
+                    }
+                }
+
+                .geo-wr {
+                    display: none;
+                    text-align: right;
+                    padding-right: 0;
+
+                    @include media($large-screen) {
+                        @include span-columns(3);
+                        @include omega();
+                    }
+
+                }
+            }
+        }
+    }
+}

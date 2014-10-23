@@ -1,0 +1,16 @@
+**/.idea/
+/src/bower_components/
+
+gulpfile_old.js
+
+node_modules
+
+/serve/
+
+/site/
+
+
+
+/.idea
+
+.idea

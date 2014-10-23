@@ -1,0 +1,13 @@
+{% strip %}
+{% if include.page %}
+{% assign tags = include.page.tags %}
+{% else %}
+{% assign tags = page.tags %}
+{% endif %}
+<div class="page-tags">
+    <label>Метки: </label>
+{% for tag in tags %}
+    <a href='/tag/{{tag | normalize}}'>#{{ tag | strip_newlines }}</a>{% unless forloop.last %} {% endunless %}
+{% endfor %}
+</div>
+{% endstrip %}

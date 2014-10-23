@@ -1,0 +1,34 @@
+---
+layout: null
+---
+
+{
+    "timeline":
+    {
+        "headline":"Архив",
+        "type":"default",
+        "text":"<p>Записи упорядчены по времени</p>",
+        "asset": {
+            "credit":"Gaziga"
+        },
+        "date": [
+{% for post in site.posts %}
+{
+    "startDate":"{{post.date | date:'%Y,%m,%d'}}",
+    "endDate":"{{post.date | date:'%Y,%m,%d'}}",
+    "headline":"<a href='{{ post.url | furl }}' class='cover'>{{ post.title }}</a>",
+    "text":"{%strip%}<p>{{ post.content | markdownify | excerpt | strip_newlines }}</p>{% include geo-links.html page=post %}{%endstrip%}",
+    "classname":"",
+    "asset": {
+        "media":"http://gaziga.com{{ post.url | furl }}title@2x.jpg",
+        "thumbnail":"http://gaziga.com{{ post.url | furl }}title-s@2x.jpg"
+    }
+}
+{% unless forloop.last %}
+,
+{% endunless %}
+{% endfor %}
+
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+ <li>
+    <a class='month icon-down-open-mini' href="#">{{ month[0] | month_name }}</a>
+    <ul class="posts" style='display: block'>
+    {% for item in month[1]%}
+        {% include archive/archive_post.html %}
+    {% endfor %}
+    </ul>
+</li>

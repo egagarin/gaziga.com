@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<header><h1>{{ page.title | translate }}</h1></header>
+
+{% assign ordered = pages | order: 'title' %}
+
+<div class="taxonomy">
+    {% for page in ordered %}
+        <a href="{{page.dir | furl}}">{{ page.title | translate }}</a><br/>
+    {% endfor %}
+</div>

@@ -1,0 +1,18 @@
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if paginator.next_page %}
+    <a class='page next' href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | furl }}">Ранее</a>
+    {% else %}
+    <span class='page next'>Ранее</span>
+    {% endif %}
+
+    <label>Страница <b>{{paginator.page}}</b> из <b>{{paginator.total_pages}}</b></label>
+
+    {% if paginator.previous_page %}
+    <a class='page prev' href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' | furl}}" title="">Далее</a>
+    {% else %}
+    <span class='page prev' >Далее</span>
+    {% endif %}
+</div>
+{% endif %}
+

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    {% include head.html %}{% contentblock head %}
+</head>
+<body>
+
+<div class="wrapper-for-content-outside-of-footer">
+    {% include browse-happy.html %}
+
+    {% include nav.html %}
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <div class="push">
+    </div>
+</div>
+
+
+
+{% include footer.html %}
+
+
+{% include scripts.html %}
+</body>
+</html>

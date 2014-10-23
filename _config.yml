@@ -1,0 +1,42 @@
+# Site settings
+title: Gaziga
+description: Орбитальная станция им. Гагарина
+tagline: Орбитальная станция им. Гагарина
+email: gagarych@gmail.com
+description: Носим рюкзаки, варим макароны
+url: "http://localhost:3000"
+twitter_username: gaziga
+github_username:  gagarych
+gaNumber: UA-24364657-1
+
+# Build settings
+debug: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+source: src
+destination: serve
+encoding: utf-8
+permalink: :title
+permalink_style: :pretty
+relative_permalinks: true
+paginate: 6
+#limit_posts: 16
+lsi: false
+
+location: Minsk
+
+owner:
+  name: gagarin
+  email: gagarych@gmail.com
+  bio:
+  twitter: gagarych
+
+future: true
+show_drafts: true
+highlighter: true
+
+exclude: ['**/*.scss', 'bower_components/**/*.html']
+
+

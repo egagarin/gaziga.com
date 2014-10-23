@@ -1,0 +1,36 @@
+@import "headers";
+
+
+html, body {
+    height: 100%;
+    font-smoothing: antialiased;
+//    background-color: darken($color-content-bg, 5);
+}
+
+body {
+
+}
+
+.avatar {
+    @include avatar(40px, 'gagarin');
+    @include avatar(40px, 'uma');
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+.disqus-wrapper {
+    margin-top: 40px;
+    img {
+        border-radius: 0 !important;
+    }
+}

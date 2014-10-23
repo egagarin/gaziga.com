@@ -1,0 +1,16 @@
+<li>
+    <div class="day-wr">
+        <div class="day">{{ item.date | date: "%d" }}</div>
+    </div>
+    <div class="title-wr">
+        <a class="title" href="{{ item.url | furl }}" title="{{ item.title }}">{{ item.title }}</a>
+    </div>
+    <div class="author-wr">
+        <a class="author" href="/author/{{ item.author }}/">{{ item.author }}</a>
+    </div>
+    <div class="geo-wr">
+        <div class="geo">
+            {% include geo-links.html page=item %}
+        </div>
+    </div>
+</li>

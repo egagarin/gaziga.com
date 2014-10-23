@@ -1,0 +1,132 @@
+.pagination {
+    @include span-columns(12);
+    $pagination-border-color: $color-high;
+    $pagination-border: 1px solid $pagination-border-color;
+    $pagination-background: lighten($pagination-border-color, 10);
+    $pagination-hover-background: lighten($pagination-background, 5);
+    $pagination-color: $base-font-color;
+
+    text-align: center;
+
+    $width: 3px;
+
+    label {
+        display: none;
+        @include media($medium-screen) {
+            color: $color-content-light;
+            display: inline-block;
+            font-weight: normal;
+            font-family: $header-font-family;
+        }
+    }
+
+    a {
+        @include block-link;
+        transition: none;
+        color: $color-high;
+        &:hover,
+        &:focus, &:active {
+            background: $color-high;
+            color: #fff;
+        }
+
+
+
+        &.prev {
+            &:hover,
+            &:focus, &:active {
+                &:before, &:after {
+                    border-left-color: $color-high !important;
+                }
+            }
+        }
+
+
+        &.next {
+            &:hover,
+            &:focus, &:active {
+                &:before, &:after {
+                    border-right-color: $color-high !important;
+                }
+            }
+        }
+    }
+
+    .page {
+        margin: 20px;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        background: #fff;
+        border-radius: $base-border-radius;
+        border: $pagination-border;
+        padding: $base-spacing/4 $gutter/2;
+
+        &.next {
+            @include arrow(20px, $color-high, left);
+
+        }
+
+        &.prev {
+            @include arrow(20px, $color-high, right);
+            border-right: none;
+        }
+
+    }
+
+    span.page {
+        border-color: $base-border-color;
+        &.prev {
+            &:before, &after {
+                border-left-color: $base-border-color;
+            }
+        }
+        &.next {
+            &:before, &after {
+                border-right-color: $base-border-color;
+            }
+        }
+    }
+
+    ul {
+        display: inline;
+        text-align: center;
+
+        li {
+            display: inline;
+        }
+
+        ul li {
+            display: none;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                display: inline;
+            }
+
+            @include media($large-screen) {
+                display: inline;
+            }
+        }
+
+        li a {
+            @include transition(all 0.2s ease-in-out);
+            background: $pagination-background;
+            border-radius: $base-border-radius;
+            border: $pagination-border;
+            color: $pagination-color;
+            padding: $base-spacing/4 $gutter/2;
+
+            &:hover,
+            &:focus {
+                background: $pagination-hover-background;
+                color: $base-link-color;
+            }
+
+            &:active {
+                background: $pagination-background;
+            }
+        }
+    }
+}

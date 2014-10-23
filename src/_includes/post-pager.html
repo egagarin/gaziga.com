@@ -1,0 +1,23 @@
+<div class="post-pager">
+    {% if page.previous %}
+    <div class="page prev">
+        <img src="{{ page.previous.url | thumb_sm}}" alt="" width="90" height="90"/>
+        <div class="page-cap">&larr;&nbsp;Ранее</div>
+        <div class="page-t">
+            <a class="cover" href="{{ page.previous.url | furl }}">{{ page.previous.title }}</a>
+            <p class="post-meta">{{ page.previous.date | format_date }} | <a href="/author/{{ page.previous.author }}/">{{ page.previous.author }}</a>  | {% include geo-links.html page=page.previous %}</p>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.next %}
+    <div class="page next">
+        <img src="{{ page.next.url | thumb_sm }}" alt="{{ page.next.title }}" width="90" height="90"/>
+        <div class="page-cap">Далее&nbsp;&rarr;</div>
+
+        <div class="page-t">
+            <a class="cover" href="{{ page.next.url | furl }}">{{ page.next.title }}</a>
+            <p class="post-meta">{{ page.next.date | format_date }} | <a href="/author/{{ page.next.author }}/">{{ page.next.author }}</a> | {% include geo-links.html page=page.next %}</p>
+        </div>
+    </div>
+    {% endif %}
+</div>

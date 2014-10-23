@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+    {% if paginator and paginator.page > 1 %}Страница {{ paginator.page }} | {% endif %}{% if page.title %}{{ page.title | translate }} | {% endif %}Gaziga
+</title>
+
+{% include favicon.html %}
+
+
+<!-- build:css /assets/stylesheets/style.min.css -->
+    <link rel="stylesheet" href="/assets/stylesheets/style.css">
+<!-- endbuild -->
+
+<!-- build:css /assets/stylesheets/style.custom.min.css -->
+{% contentblock styles %}
+{% for style in page.styles %}
+    <link rel="stylesheet" type="text/css" href="{{style}}"/>
+{% endfor %}
+<!-- endbuild -->
+
+<link rel="alternate" type="application/rss+xml" title="Gaziga" href="http://feeds.feedburner.com/gaziga"/>
+
+{% if page.path != '404.html' %}
+    <link href="{{ site.site_url }}{{ page.url | replace: 'index.html', '' | furl}}" rel="canonical" />
+{% endif %}
+
+<meta property='og:locale' content='ru_RU' />
+<meta property='og:title' content='{{ page.title }}' />
+<meta property='og:site_name' content='{{ site.name }}' />
+<meta property='og:url' content="{{ site.site_url }}{{ page.url | replace: 'index.html', '' | furl}}" />
+
+<meta name="keywords" content="{{ page.tags | join: ', ' }}" />
+
+{% if page.next %}
+<link href="{{ site.site_url }}{{ page.next.url | furl }}" rel="next" />
+{% endif %}
+{% if page.previous %}
+<link href="{{ site.site_url }}{{ page.previous.url | furl }}" rel="prev" />
+{% endif %}

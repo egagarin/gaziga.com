@@ -1,0 +1,59 @@
+//@include span-columns(12);
+//
+//@include media($medium-screen) {
+//  @include span-columns(6);
+//  @include omega(2n);
+//}
+//
+//@include media($large-screen) {
+//  @include span-columns(4);
+//  @include omega-reset(2n);
+//  @include omega(3n);
+//}
+
+
+
+.more-posts {
+    @include outer-container;
+    &-label {
+        margin-right: 10px;
+        font-size: $h4-font-size;
+        font-family: $header-font-family;
+    }
+
+    &-list {
+        @include span-columns(12);
+    }
+
+    &-item {
+       @include span-columns(12);
+        margin: 10px 0;
+        height: 90px;
+        display: inline-block;
+
+        @include media($medium-screen) {
+          @include span-columns(6);
+          @include omega(2n);
+        }
+
+
+
+        @include has-cover-link;
+        .page-t {
+            font-family: $header-font-family;
+            margin-top: 20px;
+            a {
+                z-index: 200;
+            }
+            a.cover, p {
+                @include ellipsis;
+                display: block;
+            }
+        }
+        img {
+            margin-right: 10px;
+            float: left;
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+.tos {
+    .row {
+        margin: 20px;
+        display: table;
+        &:before {
+            font-size: 50px;
+            color: $color-content-light;
+            display: table-cell;
+            padding-right: 10px;
+        }
+        span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}

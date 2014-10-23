@@ -1,0 +1,20 @@
+<div class="card">
+    <!--<div class="ribbon-wrapper"><div class="ribbon">RIBBON</div></div>-->
+    <div class="card-wr">
+        <div class="card-image">
+            <img class="ratio-inner" src="{{ post.url | thumb_lg }}" alt="{{ post.title }}">
+        </div>
+        <div class="card-header">
+            <h1>
+                <a href="{{ post.url | furl }}" class="cover">{{ post.title }}</a>
+            </h1>
+        </div>
+
+        <div class="card-copy">
+            <p>
+                {{ post.content | markdownify | excerpt }}
+            </p>
+        </div>
+    </div>
+    {% include post-meta.html %}
+</div>

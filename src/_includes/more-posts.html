@@ -1,0 +1,20 @@
+{% assign related_posts = site.related_posts | exclude_prev_next %}
+
+<div class="more-posts">
+    <div class="more-posts-label">
+        Еще почитать на&nbsp;эту&nbsp;тему:
+    </div>
+    <div class="more-posts-list">
+
+        {% for post in related_posts | limit: 4%}
+        <div class="more-posts-item">
+            <img src="{{ post.url | thumb_sm }}" alt="" width="90" height="90"/>
+            <div class="page-t">
+                <a class="cover" href="{{ post.url | furl }}">{{ post.title }}</a>
+                <p class="post-meta">{{ post.date | format_date }} | <a href="/author/{{ post.author }}/">{{ post.author }}</a>  | {% include geo-links.html page=post %}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+

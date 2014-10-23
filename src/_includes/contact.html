@@ -1,0 +1,14 @@
+{% assign user = site.data.contacts[include.name] %}
+
+<div itemscope itemtype="http://schema.org/Person" class="contact-card">
+    <img src="/assets/images/authors/a-{{include.name}}.jpg" itemprop="image" width=150 height=150 alt="{{ user.title }}"/>
+    <div class="details">
+        <h3 itemprop="additionalName" class="header"><span>{{ user.title }}</span></h3>
+        <span itemprop="name" class="icon-{{user.gender}}">{{ user.full_name }}</span>
+        <a href="mailto:{{ user.email }}" itemprop="email" class="icon-gmail">{{ user.email }}</a>
+        <a href="https://www.facebook.com/{{ user.fb }}" itemprop="url" class="icon-facebook">{{ user.fb }}</a>
+        <div itemscope itemtype="http://schema.org/Place">
+            <a href="https://www.google.com/maps/preview#q={{ site.location }}" itemprop="map" class="icon-location">{{ site.location }}</a>
+        </div>
+    </div>
+</div>

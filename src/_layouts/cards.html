@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="cards">
+    {% for post in paginator.posts %}
+    {% include post-card.html %}
+    {% endfor %}
+    {% include pagination.html %}
+    {% include disqus-count.html %}
+</div>

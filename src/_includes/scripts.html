@@ -1,0 +1,20 @@
+{% unless site.debug %}
+    {% include ga.html %}
+{% endunless %}
+
+<!-- build:js /assets/javascript/v.min.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- JS -->
+<!-- build:js /assets/javascript/all.min.js -->
+<script src="/assets/javascript/nav.js"></script>
+<!-- endbuild -->
+
+{% for script in page.scripts %}
+<script type="text/javascript" src="{{ script }}"></script>
+{% endfor %}
+{% contentblock scripts %}
+
