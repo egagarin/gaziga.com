@@ -11,7 +11,7 @@ before_install:
 - bundle install
 - npm install
 script:
-- gulp build
+- gulp publish
 after_success:
 - gulp deploy
 env:
