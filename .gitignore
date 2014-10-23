@@ -14,3 +14,17 @@ node_modules
 /.idea
 
 .idea
+
+/node_modules
+
+/serve
+
+/site
+
+/src/assets/images/src
+
+/src/assets/stylesheets
+
+/src/bower_components
+
+/static
