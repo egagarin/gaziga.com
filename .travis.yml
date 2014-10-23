@@ -11,5 +11,5 @@ script:
 - gulp deploy
 env:
   global:
-  - secure: kv//Ku13hAwOkA2tzx7Sd9QAPKRpnxixS5RbiWltqKhUJId3smITpiOZ5Nbx/89NKiYR8v8wAN2GmXk7Dist4kViksSqtJOncUSP0jOsEG4pFSg1yhCx8tli2UWKbO36TXNUvgc/TST/s702dc3zYmBTTf/AkP6dNK/rtYXcbt8=
-  - secure: kkG+bsCHN466AJHqtBarEPwT7LgERoyjLWS+Tqpl5LgedISnu4cog0Oe5lZHGSYsK5sK3cZOhysviOf5xy7oOew7CLXZ8CsJOWk0EVJEmLh5zVDo5CMEZkVJbjHgvU/mwA5xCkwawQVpdxJLmx2a0oNTqFLEo2iRL0y8427BSrw=
+  - secure: h2XFbHjxKQoKHcgewbc7q19HxQ64QpBBtL/ZP3Zlf6P0vfMENumcJby3l+0Mx6SdKZR1xcGdNmLYOCZgqwP6NV0hSUNx9WiwRjk9+onCgs41cKDYwR2dYfjbnNR6tXMUxDi3KeCL+hgWDxEdoJBMfe3V+vMfXjj6HbpaeJ8P2YU=
+  - secure: L0q/VI62+squxD+tTOKbvckAVlHwgnhsjVP1qfLxRY4CyQnTaSxGoeHfGoEK84bZS59xM/Dl6m3YaYHwpJe1bR0LL9owEzu0CwQhSLn+6SkGDYKUju+wUcaVTZPEYhXsIRjnz37ZDJ8f3Nv/V9GGfBrkRyqFcRrHX0g42yIuTFI=
