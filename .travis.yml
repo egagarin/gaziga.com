@@ -1,11 +1,12 @@
 language: node_js
-
 node_js:
-  - 0.10
-  - 0.11
-
+- 0.1
+- 0.11
 before_install:
-  - npm install -g gulp
-
+- npm install -g gulp
 script:
-  - gulp deploy
+- gulp deploy
+env:
+  global:
+  - secure: fuUE3oZmqVLEn0jQ9jnN04eGCSc78dPFtNwS+cTrQITUh7xYyLidkZipZjpHXAuBkbqH+BHoHlYy38nsVU+PeM+kr5kSYUAHzidUYiKsKdMxWov2AL8J9srjZJFaiA7weJ7EE2U2cpV+NuB99y8zbYPgaeTeD3cOjvwW1XIwqXo=
+  - secure: wIErAMntBDsnwbCXa0tQJoKRIHDo4W2GyIgutaLmPOr4bVfdNXbQCgnQBNncqYhdd6g7aZ1WLT8hYFO6Zl0YNSH8J3+RoGr2qDj1RSdXLo+iyIYxhpVjHEDBm0XMty/lHqHSxqFFXz0/3fQ7/NkbNJdiDiMepSNllyE2mw97w7w=
