@@ -97,11 +97,11 @@ gulp.task('html', ['styles'], function () {
             removeRedundantAttributes: true
         })))
         // Gzip your text files
-        //.pipe($.if('*.html', $.gzip({append: false})))
-        //.pipe($.if('*.xml', $.gzip({append: false})))
-        //.pipe($.if('*.txt', $.gzip({append: false})))
-        //.pipe($.if('*.css', $.gzip({append: false})))
-        //.pipe($.if('*.js', $.gzip({append: false})))
+        .pipe($.if('*.html', $.gzip({append: false})))
+        .pipe($.if('*.xml', $.gzip({append: false})))
+        .pipe($.if('*.txt', $.gzip({append: false})))
+        .pipe($.if('*.css', $.gzip({append: false})))
+        .pipe($.if('*.js', $.gzip({append: false})))
         // Send the output to the correct folder
         .pipe(gulp.dest('site'))
         .pipe($.size({title: 'Optimizations'}));
