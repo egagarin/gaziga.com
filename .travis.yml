@@ -10,6 +10,8 @@ before_install:
 - gem install bundler
 - bundle install
 - npm install
+- npm install bower
+- bower install
 script:
 - gulp publish
 after_success:
