@@ -80,6 +80,7 @@ gulp.task('images', function () {
 // Optimizes all the CSS, HTML and concats the JS etc
 gulp.task('html', ['styles'], function () {
     return gulp.src('serve/**/*.html')
+        .pipe($.plumber())
         .pipe($.useref.assets({searchPath: 'serve'}))
         .pipe($.useref.restore())
         .pipe($.useref())
