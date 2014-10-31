@@ -2,19 +2,29 @@
     {% include ga.html %}
 {% endunless %}
 
-<!-- build:js /assets/javascript/v.min.js -->
-<!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!-- JS -->
 <!-- build:js /assets/javascript/all.min.js -->
 <script src="/assets/javascript/nav.js"></script>
 <!-- endbuild -->
 
-{% for script in page.scripts %}
+{% assign local_scripts = page.scripts | local_urls %}
+{% assign remote_scripts = page.scripts | remote_urls %}
+
+{% for script in remote_scripts %}
 <script type="text/javascript" src="{{ script }}"></script>
 {% endfor %}
+
+<!-- JS -->
+<!-- build:js /assets/javascript/c.min.js -->
+{% for script in local_scripts %}
+<script type="text/javascript" src="{{ script }}"></script>
+{% endfor %}
+<!-- endbuild -->
+
 {% contentblock scripts %}
+
+
+
 

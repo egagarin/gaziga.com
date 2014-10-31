@@ -99,6 +99,18 @@ module Jekyll
         }
     end
 
+    def local_urls(coll)
+      coll.reject{ |i|
+        i.start_with?('http')
+      } if coll
+    end
+
+    def remote_urls(coll)
+      coll.select{ |i|
+        i.start_with?('http')
+      } if coll
+    end
+
     def page
         @context.environments.first['page']
     end

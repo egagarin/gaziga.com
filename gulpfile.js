@@ -97,11 +97,11 @@ gulp.task('html', ['styles'], function () {
             removeRedundantAttributes: true
         })))
         // Gzip your text files
-        .pipe($.if('*.html', $.gzip({append: false})))
-        .pipe($.if('*.xml', $.gzip({append: false})))
-        .pipe($.if('*.txt', $.gzip({append: false})))
-        .pipe($.if('*.css', $.gzip({append: false})))
-        .pipe($.if('*.js', $.gzip({append: false})))
+        //.pipe($.if('*.html', $.gzip({append: false})))
+        //.pipe($.if('*.xml', $.gzip({append: false})))
+        //.pipe($.if('*.txt', $.gzip({append: false})))
+        //.pipe($.if('*.css', $.gzip({append: false})))
+        //.pipe($.if('*.js', $.gzip({append: false})))
         // Send the output to the correct folder
         .pipe(gulp.dest('site'))
         .pipe($.size({title: 'Optimizations'}));
@@ -122,17 +122,22 @@ gulp.task('deploy', function () {
   var publisher = $.awspublish.create(credentials);
 
   var headers = {
-    'Cache-Control': 'max-age=315360000, no-transform, public',
-    'Content-Encoding': 'gzip'
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+    //'Content-Encoding': 'gzip'
   };
   gulp.src('site/**/*')
     .pipe($.plumber())
+    //.pipe($.if('*.html', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.xml', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.txt', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.css', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.js', $.awspublish.gzip({ ext: '.gz' })))
     // Parallelize the number of concurrent uploads, in this case 30
     .pipe(parallelize(publisher.publish(headers), 30))
     // Have your files in the system cache so you don't have to recheck all the files every time
     .pipe(publisher.cache())
     // Synchronize the contents of the bucket and local (this deletes everything that isn't in local!)
-    .pipe(publisher.sync()) //leave cached references
+    //.pipe(publisher.sync()) //leave cached references
     // And print the ouput, glorious
     .pipe($.awspublish.reporter());
     // And update the default root object
@@ -153,7 +158,7 @@ gulp.task('doctor', $.shell.task('jekyll doctor'));
 
 // Copies over images and .xml/.txt files to the distribution folder
 gulp.task('copy', function () {
-  var xmlandtxt = gulp.src(['serve/*.txt', 'serve/*.xml'])
+  var xmlandtxt = gulp.src(['serve/*.txt', 'serve/**/*.xml'])
     .pipe(gulp.dest('site'));
   var images = gulp.src('src/assets/images/**/*')
     .pipe(gulp.dest('site/assets/images'));
@@ -211,4 +216,21 @@ gulp.task('build', ['jekyll:prod', 'styles', 'images'], function () {
 // it and outputs it to './site'
 gulp.task('publish', ['build', 'clean:prod'], function () {
     gulp.start('html', 'copy');
+});
+
+// Optimizes the images that exists
+gulp.task('optimize-photos', function () {
+  return gulp.src('static/**/*.jpg')
+    .pipe($.plumber())
+    .pipe($.imagemin({
+      // Runs 16 trials on the PNGs to better the optimization
+      // Can by anything from 1 to 7, for more see
+      // https://github.com/sindresorhus/gulp-imagemin#optimizationlevel-png
+      optimizationLevel: 3,
+      // Lossless conversion to progressive JPGs
+      progressive: true,
+      // Interlace GIFs for progressive rendering
+      interlaced: true
+    }))
+    .pipe($.size({title: 'Images'}));
 });
