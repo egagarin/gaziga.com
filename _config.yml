@@ -21,11 +21,11 @@ encoding: utf-8
 permalink: :title
 permalink_style: :pretty
 relative_permalinks: true
-paginate: 6
+paginate: 12
 #limit_posts: 16
 lsi: false
 
-location: Minsk
+location: Chiang Mai
 
 owner:
   name: gagarin
