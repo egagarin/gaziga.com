@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'jekyll-sitemap'
 
 module Jekyll
 
@@ -25,7 +26,6 @@ module Jekyll
         }
 
         def generate(site)
-            require 'jekyll-sitemap'
             @site = site
             process_posts
             process_pages
