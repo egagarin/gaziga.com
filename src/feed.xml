@@ -2,7 +2,7 @@
 layout: null
 ---
 {%strip%}
-{% if feed && feed.posts %}
+{% if feed and feed.posts %}
 {% assign posts = feed.posts %}
 {% else %}
 {% assign posts = site.posts %}
@@ -21,7 +21,7 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
-    {% for post in posts | limit:5 %}
+    {% for post in posts limit:5 %}
     <item>
         <title>{{ post.title | xml_escape}}</title>
         <author>{{ post.author | get_email }} ({{ post.author }})</author>

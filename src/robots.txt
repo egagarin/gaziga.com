@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /best-500px-photo-2014/
+Allow: /

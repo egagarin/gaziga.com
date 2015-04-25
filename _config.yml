@@ -9,6 +9,8 @@ twitter_username: gaziga
 github_username:  gagarych
 gaNumber: UA-24364657-1
 
+#url: http://gaziga.com
+
 # Build settings
 debug: false
 markdown: kramdown
@@ -23,9 +25,9 @@ permalink_style: :pretty
 relative_permalinks: true
 paginate: 12
 #limit_posts: 16
-lsi: false
+lsi: true
 
-location: Chiang Mai
+location: Indonesia
 
 owner:
   name: gagarin

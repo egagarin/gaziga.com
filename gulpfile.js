@@ -34,7 +34,7 @@ var messages = {
 // This will build the site with the production settings
 gulp.task('jekyll:dev', function (done) {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts'], {stdio: 'inherit'})
     .on('close', done);
 });
 
@@ -203,6 +203,10 @@ gulp.task('default', ['build'], function () {
     gulp.start('serve:dev');
 });
 
+gulp.task('dev', ['build:dev'], function () {
+  gulp.start('serve:dev');
+});
+
 // Checks your CSS, JS and Jekyll for errors
 gulp.task('check', ['jslint', 'doctor'], function () {
   // Better hope nothing is wrong.
@@ -210,6 +214,9 @@ gulp.task('check', ['jslint', 'doctor'], function () {
 
 // Builds the site but doesn't serve it to you
 gulp.task('build', ['jekyll:prod', 'styles', 'images'], function () {
+});
+
+gulp.task('build:dev', ['jekyll:dev', 'styles', 'images'], function () {
 });
 
 // Builds your site with the 'build' command and then runs all the optimizations on

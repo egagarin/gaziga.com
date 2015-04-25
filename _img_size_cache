@@ -3561,6 +3561,57 @@ photo:
   sulug-island-and-turtle/turtle.jpg:
   - 980
   - 654
+  koh-chang-ranong/tsunami-shelter-thumb.jpg:
+  - 480
+  - 360
+  merapi-merbabu/merbabu-nochu.jpg:
+  - 980
+  - 653
+  merapi-merbabu/predrassvetnyi-lawu.jpg:
+  - 980
+  - 653
+  merapi-merbabu/krater.jpg:
+  - 980
+  - 653
+  merapi-merbabu/krater-1.jpg:
+  - 979
+  - 514
+  merapi-merbabu/lawu-na-rassvete.jpg:
+  - 980
+  - 653
+  merapi-merbabu/vershina-garuda.jpg:
+  - 980
+  - 653
+  merapi-merbabu/merbabu.jpg:
+  - 980
+  - 653
+  merapi-merbabu/esche-raz-zelenyi-merbabu.jpg:
+  - 979
+  - 653
+  merapi-merbabu/camp-place-under-merapi.jpg:
+  - 979
+  - 653
+  merapi-merbabu/merapi.jpg:
+  - 980
+  - 653
+  merapi-merbabu/groza.jpg:
+  - 980
+  - 653
+  merapi-merbabu/molnii.jpg:
+  - 980
+  - 653
+  merapi-merbabu/vulkany-v-tumane.jpg:
+  - 980
+  - 653
+  merapi-merbabu/kemping-na-merbabu.jpg:
+  - 979
+  - 653
+  merapi-merbabu/merapi-1.jpg:
+  - 980
+  - 653
+  merapi-merbabu/merbabu-1.jpg:
+  - 979
+  - 653
 fb:
   "/poezd-chiang-mai-bangkok": title.jpg
   "/koh-chang-ranong": title.jpg
@@ -3647,6 +3698,8 @@ fb:
   "/trusmadi-down": title-fb.jpg
   "/trusmadi-jungle": title-fb.jpg
   "/sulug-island-and-turtle": title-fb.jpg
+  "/best-500px-photo-2014": 
+  "/merapi-merbabu": title-s@2x.jpg
 post_thumb_sm:
   "/zamboanga-sandakan": title-s@2x.jpg
   "/motoladakh-nubra": title-s@2x.jpg
@@ -3732,6 +3785,9 @@ post_thumb_sm:
   "/a-glimpse-into-upper-mustang": title-s.jpg
   "/north-annapurna-base-camp-part1": title-s.jpg
   "/north-annapurna-base-camp-part2": title-s.jpg
+  "/best-500px-photo-2014": 
+  "/Mandalay": 
+  "/merapi-merbabu": title-s@2x.jpg
 post_thumb_lg:
   "/sulug-island-and-turtle": title@2x.jpg
   "/trusmadi-jungle": title@2x.jpg
@@ -3817,3 +3873,6 @@ post_thumb_lg:
   "/igrushechnyj-poezd-v-coonoor": title.jpg
   "/backpacker-ecohostel": title.jpg
   "/a-glimpse-into-upper-mustang": title.jpg
+  "/best-500px-photo-2014": 
+  "/merapi-merbabu": title@2x.jpg
+  "/Mandalay": 

@@ -1,12 +1,12 @@
 {% assign related_posts = site.related_posts | exclude_prev_next %}
-
+{% if related_posts != empty%}
 <div class="more-posts">
     <div class="more-posts-label">
         Еще почитать на&nbsp;эту&nbsp;тему:
     </div>
     <div class="more-posts-list">
 
-        {% for post in related_posts | limit: 4%}
+        {% for post in related_posts limit:4 %}
         <div class="more-posts-item">
             <img src="{{ post.url | thumb_sm }}" alt="" width="90" height="90"/>
             <div class="page-t">
@@ -17,4 +17,5 @@
         {% endfor %}
     </div>
 </div>
+{% endif %}
 

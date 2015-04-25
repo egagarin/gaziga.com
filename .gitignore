@@ -30,3 +30,13 @@ node_modules
 /static
 
 /.awspublish-new.gaziga.com
+
+/exported/
+
+/src/.jekyll-metadata
+
+/src/_drafts/
+
+/tools/gcmd/.bundle/install.log
+
+/tools/
