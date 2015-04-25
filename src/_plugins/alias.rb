@@ -25,6 +25,7 @@ module Jekyll
         }
 
         def generate(site)
+            require 'jekyll-sitemap'
             @site = site
             process_posts
             process_pages
