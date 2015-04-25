@@ -46,10 +46,16 @@ gulp.task('jekyll:prod', $.shell.task('bundle exec jekyll build --config _config
 // Compiles the SASS files and moves them into the 'assets/stylesheets' directory
 gulp.task('styles', function () {
     // Looks at the style.scss file for what to include and creates a style.css file
-    return gulp.src('src/assets/scss/style.scss')
-        .pipe($.sass({
-          includePaths: require('node-neat').includePaths
-        }))
+//    console.log(require('node-neat').includePaths.map(function(el){
+//  return el + "/*.scss";
+//}));
+    return $.rubySass('src/assets/scss/style.scss', { style: 'expanded', loadPath: require('node-neat').includePaths })
+
+        //.pipe($.rubySass({
+        //  //loadPath: require('node-neat').includePaths.map(function(el){
+        //  //  return el + "/*.scss";
+        //  //}), trace: true
+        //}))
         // AutoPrefix your CSS so it works between browsers
         .pipe($.autoprefixer('last 1 version', { cascade: true }))
         // Directory your CSS file goes to
@@ -241,3 +247,5 @@ gulp.task('optimize-photos', function () {
     }))
     .pipe($.size({title: 'Images'}));
 });
+
+

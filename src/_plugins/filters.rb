@@ -57,12 +57,11 @@ module Jekyll
     end
 
     def strip_html(input)
-      input.gsub(/<\/?[^>]*>/, "")
+       input.gsub('. ', ".").gsub('.', ". ").gsub(/<\/?[^>]*>/, "")
     end
-
-
+    
     def excerpt(input)
-      strip_html HTML_Truncator.truncate(input, 250, :length_in_chars => true).gsub(/\r\n?/, '')
+      strip_html HTML_Truncator.truncate(input, 250, :length_in_chars => true).gsub(/\r\n?/, ' ')
     end
 
     def no_slash(input)

@@ -42,3 +42,5 @@ node_modules
 /tools/
 
 /npm-debug.log
+
+/.sass-cache/

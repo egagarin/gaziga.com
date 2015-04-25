@@ -30,7 +30,7 @@ styles: ["/bower_components/elevation-profile/dist/elevation.profile.css"]
        
 [скачать kml](merapi.kml), [скачать gpx](merapi.gpx)
 
-Выехал в 11 вечера на байке из Джокьякарты, один, без Ульяны. В час ночи был на тропе.
+Выехал в 11 вечера на байке из Джокьякарты, в час ночи был на тропе.
 
 В спину смотрел ночной Мербабу.   
 ![ Мербабу ночью](merbabu-nochu.jpg)
@@ -92,7 +92,7 @@ styles: ["/bower_components/elevation-profile/dist/elevation.profile.css"]
 
 ### Полезные ссылки
 
- * <http://www.gunungbagging.com/> - просто кладезь полезной информации о маршрутах на вулканы Индонезии, на данный момент есть описание 319-и вершин, большинство с gps треками
+ * <http://www.gunungbagging.com/> - просто кладезь полезной информации о маршрутах по вулканам Индонезии, на данный момент есть описание 319-и вершин, большинство с gps треками
  * <http://www.summitpost.org/>    - информация о разных вершинах мира, также содержит описание некоторых вулканов Индонезии
  * [Мерапи на gunungbagging](http://www.gunungbagging.com/merapi/)
  * [Мерапи на summitpost](http://www.summitpost.org/merapi/150389)
