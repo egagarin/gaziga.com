@@ -1,5 +1,5 @@
 require 'fileutils'
-require 'jekyll-sitemap'
+# require 'jekyll-sitemap'
 
 module Jekyll
 
