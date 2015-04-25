@@ -83,16 +83,20 @@ gulp.task('images', function () {
         .pipe($.size({title: 'Images'}));
 });
 
+gulp.on('err', function(e) {
+  console.log(e.err.stack);
+});
+
 // Optimizes all the CSS, HTML and concats the JS etc
 gulp.task('html', ['styles'], function () {
     return gulp.src('serve/**/*.html')
-        .pipe($.plumber())
-        .pipe($.useref.assets({searchPath: 'serve'}))
-        .pipe($.useref.restore())
-        .pipe($.useref())
+        //.pipe($.plumber())
+        //.pipe($.useref.assets({searchPath: 'serve'}))
+        //.pipe($.useref.restore())
+        //.pipe($.useref())
         .pipe($.if('*.css', $.minifyCss()))
-        .pipe($.useref.restore())
-        .pipe($.useref())
+        //.pipe($.useref.restore())
+        //.pipe($.useref())
         .pipe($.if('*.html', $.htmlmin({
             removeComments: true,
             removeCommentsFromCDATA: true,
