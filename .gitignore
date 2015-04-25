@@ -40,3 +40,5 @@ node_modules
 /tools/gcmd/.bundle/install.log
 
 /tools/
+
+/npm-debug.log

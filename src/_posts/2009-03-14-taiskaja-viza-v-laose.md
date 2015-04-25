@@ -41,7 +41,7 @@ author: uma
 <p><a href="/taiskaja-viza-v-laose/patuxay-inside.jpg"><img style="border-width: 0px;" title="patuxay-inside" src="/taiskaja-viza-v-laose/patuxay-inside-thumb.jpg" border="0" alt="patuxay-inside" width="513" height="386"></a></p>
 <p>Внутри арки мифологические существа киннари (полуженщины полуптицы) в темное время суток освещают внутренности Патуксая люминесцентными лампочками.</p>
 <p><a href="/taiskaja-viza-v-laose/patuxay-kinnari.jpg"><img style="border-width: 0px;" title="patuxay-kinnari" src="/taiskaja-viza-v-laose/patuxay-kinnari-thumb.jpg" border="0" alt="patuxay-kinnari" width="304" height="403"></a></p>
-<p>Ну и конечно священная река Меконг &mdash; по эту сторону Лаос и Вьентьян, а на противоположном берегу уже Тайланд и Нонг Кхай.</p>
+<p>Ну и конечно священная река Меконг &mdash; по эту сторону Лаос и Вьентьян, а на противоположном берегу уже Таиланд и Нонг Кхай.</p>
 <p><a href="/taiskaja-viza-v-laose/img-3125-resize.jpg"><img style="border-width: 0px;" title="img-3125-resize" src="/taiskaja-viza-v-laose/img-3125-resize-thumb.jpg" border="0" alt="img-3125-resize" width="513" height="386"></a></p>
 <p>Вообще Вьентьян показался нам довольно скучным и мы решили весь второй день провести в гест-хаусе, страшная жара очень поспособствовала этому решению. В гесте был телевизор, а в нем &ndash; Lao TV, очень похожее на наше телевидение времен моей ранней юности.</p>
 <table style="width: 510px;" border="0" cellspacing="0" cellpadding="0">
