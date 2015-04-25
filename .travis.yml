@@ -6,7 +6,8 @@ branches:
   - master
 bundler_args: "--without development --path=~/.bundle"
 before_install:
-- nvm use 0.12
+- nvm install 0.11
+- nvm use 0.11
 - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
 - gem install bundler
 - bundle install
