@@ -3612,6 +3612,72 @@ photo:
   merapi-merbabu/merbabu-1.jpg:
   - 979
   - 653
+  bromo-i-caldera-tengger/vid-s-panandzhakana.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/doroga.jpg:
+  - 979
+  - 653
+  bromo-i-caldera-tengger/kaldera.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/alpy.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/chernye-duny.jpg:
+  - 979
+  - 653
+  bromo-i-caldera-tengger/farerskie-ostrova.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/semeru.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/bedlends-i-granitsa-kaldery.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/krater-bromo.jpg:
+  - 979
+  - 653
+  bromo-i-caldera-tengger/rassvet-nad-bromo.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/lestnitsa-v-ad.jpg:
+  - 980
+  - 509
+  bromo-i-caldera-tengger/ganesha.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/enduro.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/dzhipy-v-alpah.jpg:
+  - 979
+  - 653
+  bromo-i-caldera-tengger/palatka-i-batok.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/bromo-i-semeru.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/bedlends.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/dozhd.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/peschanoe-more.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/vid-s-kratera-vniz.jpg:
+  - 980
+  - 653
+  bromo-i-caldera-tengger/vsadnik.jpg:
+  - 979
+  - 653
+  bromo-i-caldera-tengger/palatka.jpg:
+  - 979
+  - 653
 fb:
   "/poezd-chiang-mai-bangkok": title.jpg
   "/koh-chang-ranong": title.jpg
@@ -3700,6 +3766,7 @@ fb:
   "/sulug-island-and-turtle": title-fb.jpg
   "/best-500px-photo-2014": 
   "/merapi-merbabu": title-s@2x.jpg
+  "/bromo-i-caldera-tengger": title-fb.jpg
 post_thumb_sm:
   "/zamboanga-sandakan": title-s@2x.jpg
   "/motoladakh-nubra": title-s@2x.jpg
@@ -3788,6 +3855,7 @@ post_thumb_sm:
   "/best-500px-photo-2014": 
   "/Mandalay": 
   "/merapi-merbabu": title-s@2x.jpg
+  "/bromo-i-caldera-tengger": title-s@2x.jpg
 post_thumb_lg:
   "/sulug-island-and-turtle": title@2x.jpg
   "/trusmadi-jungle": title@2x.jpg
@@ -3876,3 +3944,4 @@ post_thumb_lg:
   "/best-500px-photo-2014": 
   "/merapi-merbabu": title@2x.jpg
   "/Mandalay": 
+  "/bromo-i-caldera-tengger": title@2x.jpg

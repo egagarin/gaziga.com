@@ -9,7 +9,8 @@ twitter_username: gaziga
 github_username:  gagarych
 gaNumber: UA-24364657-1
 
-#url: http://gaziga.com
+url: http://gaziga.com
+#url: http://localhost:3000
 
 # Build settings
 debug: false

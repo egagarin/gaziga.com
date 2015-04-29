@@ -192,7 +192,11 @@ module Jekyll
     def get_img_size(img)
         img_name = img['src'].split('/').last
         img_url = post_res(img_name)
-        ImageHelper.instance.size(img_url, get_post, img_name)
+        puts "Resolving image size: #{img_url}"
+        size = ImageHelper.instance.size(img_url, get_post, img_name)
+        raise "Size not resolved" unless size
+        puts size
+        return size
     end
 
     def wrap_img(img)

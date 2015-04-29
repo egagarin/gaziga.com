@@ -22,10 +22,17 @@ class ImageHelper
   end
 
   def size(path, post, name)
-    key = post + name
-    @photo[key] = FastImage.size(path) unless (@photo.has_key?(key) and @photo[key])
-    return @photo[key]
+    begin
+      key = post + name
+      @photo[key] = FastImage.size(path) unless (@photo.has_key?(key) and @photo[key])
+      raise Exception unless @photo[key]
+      return @photo[key]
+    rescue Exception => e
+      puts "Cannot resolve size of image #{path}"
+      raise e
+    end
   end
+
 
   def fb_image(post)
     @fb[post] = probe_list(post, ['title-fb.jpg', 'title@2x.jpg', 'title.jpg', 'title-s@2x.jpg', 'title-s.jpg']) unless (@fb.has_key?(post) and @fb[post])
