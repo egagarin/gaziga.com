@@ -158,7 +158,7 @@ module Jekyll
 
     def half?(img)
         size = get_img_size img
-        get_ratio(img) > 80 || size[0] < 490
+        get_ratio(img) > 80 || size[0] < 495
     end
 
     def prev_node(img)

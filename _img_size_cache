@@ -3678,6 +3678,69 @@ photo:
   bromo-i-caldera-tengger/palatka.jpg:
   - 979
   - 653
+  semeru/ranu-kumbolo-kemping.jpg:
+  - 980
+  - 653
+  semeru/turisty-vozle-ranu-kumbolo.jpg:
+  - 980
+  - 653
+  semeru/podem-na-semeru.jpg:
+  - 980
+  - 653
+  semeru/podem-na-semeru-1.jpg:
+  - 980
+  - 653
+  semeru/kalimati.jpg:
+  - 980
+  - 653
+  semeru/malang-from-semeru.jpg:
+  - 979
+  - 653
+  semeru/izverzhenie-semeru.jpg:
+  - 484
+  - 484
+  semeru/izverzhenie-semeru-1.jpg:
+  - 484
+  - 484
+  semeru/izverzhenie-semeru-2.jpg:
+  - 980
+  - 653
+  semeru/rassvet-s-semeru.jpg:
+  - 979
+  - 653
+  semeru/izverzhenie-semeru-3.jpg:
+  - 980
+  - 653
+  semeru/more-oblakov.jpg:
+  - 980
+  - 653
+  semeru/vershina-semeru.jpg:
+  - 980
+  - 653
+  semeru/oblako-pepla.jpg:
+  - 979
+  - 653
+  semeru/oblako-pepla-1.jpg:
+  - 980
+  - 653
+  semeru/argopuro-i-raung.jpg:
+  - 979
+  - 653
+  semeru/tsvety.jpg:
+  - 980
+  - 653
+  semeru/ranu-kumbolo.jpg:
+  - 980
+  - 653
+  semeru/ranu-kumbolo-1.jpg:
+  - 980
+  - 653
+  semeru/semeru.jpg:
+  - 979
+  - 653
+  semeru/semeru-google-earth.jpg:
+  - 1108
+  - 658
 fb:
   "/poezd-chiang-mai-bangkok": title.jpg
   "/koh-chang-ranong": title.jpg
@@ -3767,6 +3830,7 @@ fb:
   "/best-500px-photo-2014": 
   "/merapi-merbabu": title-s@2x.jpg
   "/bromo-i-caldera-tengger": title-fb.jpg
+  "/semeru": title-fb.jpg
 post_thumb_sm:
   "/zamboanga-sandakan": title-s@2x.jpg
   "/motoladakh-nubra": title-s@2x.jpg
@@ -3856,6 +3920,7 @@ post_thumb_sm:
   "/Mandalay": 
   "/merapi-merbabu": title-s@2x.jpg
   "/bromo-i-caldera-tengger": title-s@2x.jpg
+  "/semeru": title-s@2x.jpg
 post_thumb_lg:
   "/sulug-island-and-turtle": title@2x.jpg
   "/trusmadi-jungle": title@2x.jpg
@@ -3945,3 +4010,4 @@ post_thumb_lg:
   "/merapi-merbabu": title@2x.jpg
   "/Mandalay": 
   "/bromo-i-caldera-tengger": title@2x.jpg
+  "/semeru": title@2x.jpg
