@@ -39,6 +39,7 @@
     "gulp-useref": "^1.1.2",
     "jshint-stylish": "^1.0.1",
     "merge-stream": "^0.1.7",
+    "minimist": "^1.1.1",
     "node-bourbon": "^4.2.1-beta1",
     "node-neat": "^1.7.1-beta1",
     "replacestream": "^2.1.0",

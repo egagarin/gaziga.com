@@ -93,6 +93,7 @@
 
         div[data-item="elevation-profile"] {
           margin-bottom: 10px;
+          clear: both;
         }
 
         ul, ol {
@@ -129,7 +130,12 @@
             position:relative;
             margin-bottom: 15px;
             height:0;
-            img {
+
+            &.youtube {
+              padding-top: 56.25%;
+            }
+
+            img, iframe, object, embed {
                 position:absolute;
                 top:0;
                 left:0;

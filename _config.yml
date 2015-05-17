@@ -4,13 +4,10 @@ description: Орбитальная станция им. Гагарина
 tagline: Орбитальная станция им. Гагарина
 email: gagarych@gmail.com
 description: Носим рюкзаки, варим макароны
-url: "http://localhost:3000"
+url: http://localhost:3000
 twitter_username: gaziga
 github_username:  gagarych
 gaNumber: UA-24364657-1
-
-url: http://gaziga.com
-#url: http://localhost:3000
 
 # Build settings
 debug: false
@@ -25,8 +22,8 @@ permalink: :title
 permalink_style: :pretty
 relative_permalinks: true
 paginate: 12
-#limit_posts: 16
-lsi: true
+limit_posts: 1
+lsi: false
 
 location: Indonesia
 

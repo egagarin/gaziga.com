@@ -17,8 +17,16 @@ var merge = require('merge-stream');
 // Need a command for reloading webpages using BrowserSync
 var reload = browserSync.reload;
 var cp = require('child_process');
+var minimist = require('minimist');
 // And define a variable that BrowserSync uses in it's function
 var bs;
+
+var knownOptions = {
+  string: 'post'
+};
+
+var options = minimist(process.argv.slice(2), knownOptions);
+
 
 // Deletes the directory that is used to serve the site during development
 gulp.task('clean:dev', del.bind(null, ['serve']));
@@ -41,7 +49,7 @@ gulp.task('jekyll:dev', function (done) {
 // Almost identical to the above task, but instead we load in the build configuration
 // that overwrites some of the settings in the regular configuration so that you
 // don't end up publishing your drafts or future posts
-gulp.task('jekyll:prod', $.shell.task('bundle exec jekyll build --config _config.yml,_config.build.yml'));
+gulp.task('jekyll:prod', $.shell.task('bundle exec jekyll build --config _config.yml,_config.prod.yml'));
 
 // Compiles the SASS files and moves them into the 'assets/stylesheets' directory
 gulp.task('styles', function () {
@@ -236,7 +244,9 @@ gulp.task('publish', ['build', 'clean:prod'], function () {
 
 // Optimizes the images that exists
 gulp.task('optimize-photos', function () {
-  return gulp.src('static/**/*.jpg')
+
+  var post = options.post || "**";
+  return gulp.src('static/' + post + '/*.jpg')
     .pipe($.plumber())
     .pipe($.imagemin({
       // Runs 16 trials on the PNGs to better the optimization

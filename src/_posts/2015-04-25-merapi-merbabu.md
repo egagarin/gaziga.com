@@ -3,7 +3,7 @@ layout: post
 title: "Вулканы Мерапи и Мербабу"
 date: 2015-04-25 08:00
 categories: [indonesia]
-tags: [вулканы, мерапи, мербабу, индонезия, ява, джокьякарта, маршрут, gps, kml]
+tags: [вулканы, горы, восхождение, мерапи, мербабу, индонезия, ява, джокьякарта, маршрут, gps, kml, gpx]
 author: gagarin
 scripts: ["http://d3js.org/d3.v3.min.js", "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false", "/bower_components/elevation-profile/dist/elevation.profile.min.js"]
 styles: ["/bower_components/elevation-profile/dist/elevation.profile.css"]

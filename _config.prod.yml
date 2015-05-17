@@ -1,7 +1,7 @@
 url: http://gaziga.com
 future: false
 show_drafts: false
-lsi: false
-limit_posts: 1000
+lsi: true
+limit_posts: 10000
 source: 'src'
 destination: 'serve'
