@@ -3,7 +3,7 @@ layout: post
 title:  "Трусмади. Спуск"
 date:   2014-05-25 08:00
 categories: [malaysia]
-tags: [Трусмади, trusmadi, джунгли, 'rain forest', спуск]
+tags: [Трусмади, trusmadi, джунгли, 'rain forest', спуск, kml, gps, gpx, маршрут]
 author: gagarin
 scripts: ["http://d3js.org/d3.v3.min.js", "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false", "/bower_components/elevation-profile/dist/elevation.profile.min.js"]
 styles: ["/bower_components/elevation-profile/dist/elevation.profile.css"]

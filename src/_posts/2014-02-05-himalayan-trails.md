@@ -3,7 +3,7 @@ layout: post
 title:  "Гималайские тропы"
 date:   2014-02-05 08:00
 categories: [nepal]
-tags: [Аннапурна, Северный базовый лагерь, Тиличо, Месоканто, маршрут, описание, Миристи, Муктинатх, Торонг-Ла, перевал, Талобугин, 27 Апреля]
+tags: [Аннапурна, Северный базовый лагерь, Тиличо, Месоканто, маршрут, описание, Миристи, Муктинатх, Торонг-Ла, перевал, Талобугин, 27 Апреля, kml, gps, gpx]
 author: gagarin
 scripts: ["http://d3js.org/d3.v3.min.js", "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false", "/bower_components/elevation-profile/dist/elevation.profile.min.js"]
 styles: ["/bower_components/elevation-profile/dist/elevation.profile.css"]
