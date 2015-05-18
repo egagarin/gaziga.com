@@ -18,6 +18,9 @@ var merge = require('merge-stream');
 var reload = browserSync.reload;
 var cp = require('child_process');
 var minimist = require('minimist');
+var cloudfront = require('cloudfront');
+var glob = require("glob");
+var _ = require('lodash');
 // And define a variable that BrowserSync uses in it's function
 var bs;
 
@@ -242,6 +245,8 @@ gulp.task('publish', ['build', 'clean:prod'], function () {
     gulp.start('html', 'copy');
 });
 
+gulp.task('dev', ['serve:dev','build:dev']);
+
 // Optimizes the images that exists
 gulp.task('optimize-photos', function () {
 
@@ -262,3 +267,58 @@ gulp.task('optimize-photos', function () {
 });
 
 
+
+function invalidate(paths, callback) {
+    var cf = cloudfront.createClient(process.env.AWS_S3_KEY, process.env.AWS_S3_SECRET);
+    cf.getDistribution('ESYZ2T10RQQ38', function(err, distribution) {
+      if (err) {
+        callback(err);
+        return;
+      }
+
+      distribution.invalidate(_.now(), paths, function(err, invalidation) {
+        if (err) {
+          callback(err);
+          return;
+        }
+
+        console.log(invalidation);
+        callback(null, invalidation);
+      })
+    });
+}
+
+var invalidationSets = {
+  styles: function(){
+    return ['/assets/stylesheets/style.min.css', '/assets/stylesheets/style.custom.min.css'];
+  },
+  scripts: function(){
+    return ['/assets/javascript/c.min.js', '/assets/javascript/all.min.js'];
+  },
+  getPost: function(file){
+    return "/" + file.match('\\d{4}-\\d{2}-\\d{2}-(.+)\\.md')[1] + "/"
+  },
+  lastPost: function(){
+    var files = glob.sync("src/_posts/*.md");
+    return [this.getPost(files[files.length - 1])];
+  },
+  prevPost: function(){
+    var files = glob.sync("src/_posts/*.md");
+    return [this.getPost(files[files.length - 2])];
+  },
+  xml: function() {
+    return ['/feed.xml', '/sitemap.xml']
+  }
+};
+
+function invalidateSets(){
+  var arrays = _.filter(arguments, _.isArray);
+  var callback = _.first(_.filter(arguments, _.isFunction));
+  invalidate(_.uniq(_.flatten(arrays)), callback)
+}
+
+
+
+gulp.task('invalidate', function(done){
+  invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
+});
