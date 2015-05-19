@@ -85,7 +85,7 @@ gulp.task('images', function () {
             // Runs 16 trials on the PNGs to better the optimization
             // Can by anything from 1 to 7, for more see
             // https://github.com/sindresorhus/gulp-imagemin#optimizationlevel-png
-            optimizationLevel: 3,
+            optimizationLevel: 4,
             // Lossless conversion to progressive JPGs
             progressive: true,
             // Interlace GIFs for progressive rendering
@@ -117,11 +117,11 @@ gulp.task('html', ['styles'], function () {
             removeRedundantAttributes: true
         })))
         // Gzip your text files
-        //.pipe($.if('*.html', $.gzip({append: false})))
-        //.pipe($.if('*.xml', $.gzip({append: false})))
-        //.pipe($.if('*.txt', $.gzip({append: false})))
-        //.pipe($.if('*.css', $.gzip({append: false})))
-        //.pipe($.if('*.js', $.gzip({append: false})))
+        .pipe($.if('*.html', $.gzip({append: false})))
+        .pipe($.if('*.xml', $.gzip({append: false})))
+        .pipe($.if('*.txt', $.gzip({append: false})))
+        .pipe($.if('*.css', $.gzip({append: false})))
+        .pipe($.if('*.js', $.gzip({append: false})))
         // Send the output to the correct folder
         .pipe(gulp.dest('site'))
         .pipe($.size({title: 'Optimizations'}));
@@ -147,11 +147,11 @@ gulp.task('deploy', function () {
   };
   gulp.src('site/**/*')
     .pipe($.plumber())
-    .pipe($.if('*.html', $.awspublish.gzip({ ext: '.gz' })))
-    .pipe($.if('*.xml', $.awspublish.gzip({ ext: '.gz' })))
-    .pipe($.if('*.txt', $.awspublish.gzip({ ext: '.gz' })))
-    .pipe($.if('*.css', $.awspublish.gzip({ ext: '.gz' })))
-    .pipe($.if('*.js', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.html', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.xml', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.txt', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.css', $.awspublish.gzip({ ext: '.gz' })))
+    //.pipe($.if('*.js', $.awspublish.gzip({ ext: '.gz' })))
     // Parallelize the number of concurrent uploads, in this case 30
     .pipe(parallelize(publisher.publish(headers), 30))
     // Have your files in the system cache so you don't have to recheck all the files every time
@@ -252,18 +252,20 @@ gulp.task('optimize-photos', function () {
 
   var post = options.post || "**";
   return gulp.src('static/' + post + '/*.jpg')
+  //return gulp.src('src/assets/**/*.png')
     .pipe($.plumber())
     .pipe($.imagemin({
       // Runs 16 trials on the PNGs to better the optimization
       // Can by anything from 1 to 7, for more see
       // https://github.com/sindresorhus/gulp-imagemin#optimizationlevel-png
-      optimizationLevel: 3,
+      optimizationLevel: 4,
       // Lossless conversion to progressive JPGs
       progressive: true,
       // Interlace GIFs for progressive rendering
       interlaced: true
     }))
-    .pipe($.size({title: 'Images'}));
+    .pipe($.size({title: 'Images'}))
+    .pipe(gulp.dest('static/'+post));
 });
 
 
