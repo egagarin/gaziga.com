@@ -92,9 +92,9 @@ styles: ["/bower_components/elevation-profile/dist/elevation.profile.css"]
 
 ### Полезные ссылки
 
- * <http://www.gunungbagging.com/> - много полезной информации о маршрутах по вулканам Индонезии, есть описание 319-и вершин, большинство с gps треками
- * <http://www.summitpost.org/>    - информация о разных вершинах мира, также содержит описание некоторых вулканов Индонезии
- * [Мерапи на gunungbagging](http://www.gunungbagging.com/merapi/)
- * [Мерапи на summitpost](http://www.summitpost.org/merapi/150389)
- * [Мербабу на gunungbagging](http://www.gunungbagging.com/merbabu/)
- * [Мербабу на summitpost](http://www.summitpost.org/mount-merbabu/151078)
+ * <http://www.gunungbagging.com/>{:rel='nofollow'} - много полезной информации о маршрутах по вулканам Индонезии, есть описание 319-и вершин, большинство с gps треками
+ * <http://www.summitpost.org/>{:rel='nofollow'}    - информация о разных вершинах мира, также содержит описание некоторых вулканов Индонезии
+ * [Мерапи на gunungbagging](http://www.gunungbagging.com/merapi/){:rel='nofollow'}
+ * [Мерапи на summitpost](http://www.summitpost.org/merapi/150389){:rel='nofollow'}
+ * [Мербабу на gunungbagging](http://www.gunungbagging.com/merbabu/){:rel='nofollow'}
+ * [Мербабу на summitpost](http://www.summitpost.org/mount-merbabu/151078){:rel='nofollow'}

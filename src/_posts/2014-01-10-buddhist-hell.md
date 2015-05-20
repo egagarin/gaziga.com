@@ -79,12 +79,12 @@ author: uma
 
 Вот некоторе адские места Тайланда:   
 
-- [Wat Phai Rong Wua](https://goo.gl/maps/3WtF1) в Супан Бури 
-- [Wang Saen Suk](https://goo.gl/maps/Wvjoz) в Чон Бури 
-- [Wае Tham Ta Pan](https://goo.gl/maps/tTNMi) в Пхангнге 
-- [Wat Mae Kaet Noi](https://goo.gl/maps/Hr8t5) недалеко от Чианг Мая 
-- [Wat Rong Khun](https://goo.gl/maps/vnZIA) в Чианг Рае 
-- [Wat Kaew Prasert](https://goo.gl/maps/p7N33) недалеко от Чумпона
-- [Wat Kai](https://goo.gl/maps/WeP9Z) в Аюттхае 
+- [Wat Phai Rong Wua](https://goo.gl/maps/3WtF1){:rel='nofollow'} в Супан Бури 
+- [Wang Saen Suk](https://goo.gl/maps/Wvjoz){:rel='nofollow'} в Чон Бури 
+- [Wае Tham Ta Pan](https://goo.gl/maps/tTNMi){:rel='nofollow'} в Пхангнге 
+- [Wat Mae Kaet Noi](https://goo.gl/maps/Hr8t5){:rel='nofollow'} недалеко от Чианг Мая 
+- [Wat Rong Khun](https://goo.gl/maps/vnZIA){:rel='nofollow'} в Чианг Рае 
+- [Wat Kaew Prasert](https://goo.gl/maps/p7N33){:rel='nofollow'} недалеко от Чумпона
+- [Wat Kai](https://goo.gl/maps/WeP9Z){:rel='nofollow'} в Аюттхае 
 
 Если вы знаете еще - кидайте координаты в комментариях, добавлю в список.  
