@@ -322,5 +322,6 @@ function invalidateSets(){
 
 
 gulp.task('invalidate', function(done){
-  invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
+  invalidateSets(['/merapi-merbabu/'], done);
+  //invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
 });
