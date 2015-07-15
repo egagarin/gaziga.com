@@ -21,6 +21,7 @@ var minimist = require('minimist');
 var cloudfront = require('cloudfront');
 var glob = require("glob");
 var _ = require('lodash');
+var shell = require('gulp-shell');
 // And define a variable that BrowserSync uses in it's function
 var bs;
 
@@ -268,6 +269,8 @@ gulp.task('optimize-photos', function () {
     .pipe(gulp.dest('static/'+post));
 });
 
+gulp.task('post', shell.task(['bundle exec ruby gen.rb'], {cwd: 'tools/gcmd'}));
+
 
 
 function invalidate(paths, callback) {
@@ -322,6 +325,6 @@ function invalidateSets(){
 
 
 gulp.task('invalidate', function(done){
-  invalidateSets(['/merapi-merbabu/'], done);
-  //invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
+  //invalidateSets(['/merapi-merbabu/'], done);
+  invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
 });

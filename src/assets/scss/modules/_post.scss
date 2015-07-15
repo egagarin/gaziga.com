@@ -98,6 +98,18 @@
 
         ul, ol {
           display: block;
+          clear: both;
+          @include span-columns(12);
+          li { 
+              p{
+                float: none;
+            }
+          }
+          //li {
+          //  @include span-columns(12);
+          //}
+
+          display: block;
           list-style-type: disc;
           margin-top: .3em;
           margin-bottom: 1 em;

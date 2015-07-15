@@ -3741,6 +3741,39 @@ photo:
   semeru/semeru-google-earth.jpg:
   - 1108
   - 658
+  agung/nochnaya-kaldera.jpg:
+  - 979
+  - 653
+  agung/krater-agunga.jpg:
+  - 980
+  - 653
+  agung/bozhestvo-agunga.jpg:
+  - 980
+  - 653
+  agung/oblaka.jpg:
+  - 980
+  - 653
+  agung/agung.jpg:
+  - 980
+  - 653
+  agung/agung-1.jpg:
+  - 484
+  - 484
+  agung/batur.jpg:
+  - 979
+  - 653
+  agung/more-oblakov.jpg:
+  - 980
+  - 653
+  agung/turysty.jpg:
+  - 979
+  - 653
+  agung/kaldera-batur.jpg:
+  - 980
+  - 653
+  agung/greben-agunga.jpg:
+  - 980
+  - 653
 fb:
   "/poezd-chiang-mai-bangkok": title.jpg
   "/koh-chang-ranong": title.jpg
@@ -3831,6 +3864,8 @@ fb:
   "/merapi-merbabu": title-s@2x.jpg
   "/bromo-i-caldera-tengger": title-fb.jpg
   "/semeru": title-fb.jpg
+  "/indonesia-volcanoes": title-fb.jpg
+  "/agung": title-fb.jpg
 post_thumb_sm:
   "/zamboanga-sandakan": title-s@2x.jpg
   "/motoladakh-nubra": title-s@2x.jpg
@@ -3921,6 +3956,8 @@ post_thumb_sm:
   "/merapi-merbabu": title-s@2x.jpg
   "/bromo-i-caldera-tengger": title-s@2x.jpg
   "/semeru": title-s@2x.jpg
+  "/indonesia-volcanoes": title-s@2x.jpg
+  "/agung": title-s@2x.jpg
 post_thumb_lg:
   "/sulug-island-and-turtle": title@2x.jpg
   "/trusmadi-jungle": title@2x.jpg
@@ -4011,3 +4048,5 @@ post_thumb_lg:
   "/Mandalay": 
   "/bromo-i-caldera-tengger": title@2x.jpg
   "/semeru": title@2x.jpg
+  "/indonesia-volcanoes": title@2x.jpg
+  "/agung": title@2x.jpg
