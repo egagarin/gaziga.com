@@ -67,7 +67,8 @@ module Jekyll
             alias_index = alias_index.gsub(@site.dest, '')
 
             (2..alias_index.split('/').size).step(1) do |sections|
-                @site.static_files << Jekyll::AliasFile.new(@site, @site.dest, alias_index.split('/')[0, sections].join('/'), '')
+                newAlias = Jekyll::AliasFile.new(@site, @site.dest, alias_index.split('/')[0, sections].join('/'), '');
+                @site.static_files << newAlias;
             end
         end
 
