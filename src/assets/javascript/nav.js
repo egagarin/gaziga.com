@@ -21,4 +21,13 @@ $(document).ready(function() {
         $(this).addClass('active-nav-item');
         $('.nav .more').removeClass('active-nav-item');
     });
+
+    $('.search-input').keydown(function(e){
+        if(e.which == 13) {
+          var q = $(e.target).val();
+          if (!q || !q.trim())
+            return;
+          window.location.href = "https://www.google.com/search?q=site:gaziga.com " + escape(q);
+        }
+    });
 });
