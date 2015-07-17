@@ -46,7 +46,7 @@ module Jekyll
 
                 dir = File.join(taxonomy_name, taxonomy_val)
                 pages = []
-                posts.each_slice(per_page).each_with_index do |page_posts, i|
+                posts.sort_by{|p| p.date}.reverse.each_slice(per_page).each_with_index do |page_posts, i|
                     paginator = Paginator.new(page_posts, (posts.length/per_page.to_f).ceil, i+1)
                     page_dir = i == 0 ? dir : File.join(dir, "page#{i+1}")
                     page = TaxonomyPage.new(site, taxonomy_name, taxonomy_val, site.source, page_dir, paginator)
