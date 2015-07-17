@@ -8,7 +8,11 @@
         }
         [class^="icon-"]:before, [class*=" icon-"]:before {
             padding-right: 5px;
+            width: 25px;
             text-decoration: none;
+          background: -webkit-gradient(linear, left top, left bottom, from(lighten($color-high, 4%)), to(darken($color-high, 4%)));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
 
         @include span-columns(12);

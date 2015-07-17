@@ -100,7 +100,7 @@
           display: block;
           clear: both;
           @include span-columns(12);
-          li { 
+          li {
               p{
                 float: none;
             }
@@ -119,14 +119,28 @@
           padding-bottom: .5em;
         }
 
-        h1, h2, h3 {
+        h1, h2, h3, h4, h5, h6 {
           font-weight: normal;
         }
+
+      h4 {
+        font-family: $base-font-family;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+      }
 
         p {
             display: block;
             clear: both;
             @include span-columns(12);
+            margin-top: 1em;
+            &:first-child {
+              margin-top: 0;
+            }
+        }
+
+        p:empty {
+          display: none;
         }
 
         .pwr {

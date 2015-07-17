@@ -209,7 +209,7 @@ module Jekyll
         '<div class=pwr>' + group.map{|p| "<div class='half'>#{wrap_img(p)}</div>"}.join + '</div>'
     end
 
-    def process_img(input)
+    def process_post(input)
       doc = Nokogiri::HTML(input)
       groups = group_images(doc)
 
@@ -242,6 +242,11 @@ module Jekyll
         end
       end
 
+      doc.css('p').find_all.each do |p|
+        if p.content.strip.empty?
+          p.remove
+        end
+      end
       return doc.css('body').inner_html
     end
   end

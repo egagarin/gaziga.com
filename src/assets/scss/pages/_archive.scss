@@ -8,6 +8,7 @@
 }
 
 .archive {
+    font-family: $header-font-family;
     box-sizing: border-box;
     a {
         text-decoration: none;
@@ -42,6 +43,7 @@
             }
 
             .posts {
+                font-family: $base-font-family;
                 .day, .title, .author, .geo {
                     @include underscore;
                     display: inline-block;
@@ -50,6 +52,7 @@
                     padding: 0 5px;
                 }
                 .day-wr {
+                    font-family: $header-font-family;
                     @include span-columns(3);
 
                     @include media($medium-screen) {

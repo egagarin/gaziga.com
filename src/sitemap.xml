@@ -6,7 +6,7 @@ layout: null
   {% capture site_url %}{% if site.url %}{{ site.url | append: site.baseurl }}{% else %}{{ site.github.url }}{% endif %}{% endcapture %}
   {% for post in site.posts %}{% unless post.sitemap == false %}
   <url>
-    <loc>{{ post.url | prepend: site_url }}</loc>
+    <loc>{{ post.url | prepend: site_url | furl }}</loc>
     {% if post.last_modified_at %}
     <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
     {% else %}
@@ -17,7 +17,7 @@ layout: null
 
   {% for page in site.html_pages %}{% unless page.sitemap == false %}
   <url>
-    <loc>{{ page.url | replace:'/index.html','/' | prepend: site_url }}</loc>
+    <loc>{{ page.url | replace:'/index.html','/' | prepend: site_url | furl }}</loc>
     {% if page.last_modified_at %}
     <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
     {% endif %}
@@ -26,7 +26,7 @@ layout: null
   {% for collection in site.collections %}{% unless collection.last.output == false %}
   {% for doc in collection.last.docs %}{% unless doc.sitemap == false %}
   <url>
-    <loc>{{ doc.url | replace:'/index.html','/' | prepend: site_url }}</loc>
+    <loc>{{ doc.url | replace:'/index.html','/' | prepend: site_url | furl }}</loc>
     {% if doc.last_modified_at %}
     <lastmod>{{ doc.last_modified_at | date_to_xmlschema }}</lastmod>
     {% endif %}
@@ -35,7 +35,7 @@ layout: null
   {% endunless %}{% endfor %}
   {% for file in site.html_files %}
   <url>
-    <loc>{{ file.path | prepend: site_url }}</loc>
+    <loc>{{ file.path | prepend: site_url | furl }}</loc>
     <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
   </url>
   {% endfor %}
