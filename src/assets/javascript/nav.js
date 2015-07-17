@@ -27,7 +27,7 @@ $(document).ready(function() {
           var q = $(e.target).val();
           if (!q || !q.trim())
             return;
-          window.location.href = "https://www.google.com/search?q=site:gaziga.com " + escape(q);
+          window.location.href = "https://www.google.com/search?q=site:gaziga.com " + q;
         }
     });
 });
