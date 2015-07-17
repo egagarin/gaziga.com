@@ -153,16 +153,18 @@ gulp.task('deploy', function () {
     //.pipe($.if('*.txt', $.awspublish.gzip({ ext: '.gz' })))
     //.pipe($.if('*.css', $.awspublish.gzip({ ext: '.gz' })))
     //.pipe($.if('*.js', $.awspublish.gzip({ ext: '.gz' })))
+
     // Parallelize the number of concurrent uploads, in this case 30
-    .pipe(parallelize(publisher.publish(headers), 30))
+    .pipe($.if('*.xml',
+      parallelize(publisher.publish(_.extend({'X-Robots-Tag': 'noindex'}, headers)), 30),
+      parallelize(publisher.publish(headers), 30)))
+    //.pipe(parallelize(publisher.publish(headers), 30))
     // Have your files in the system cache so you don't have to recheck all the files every time
     .pipe(publisher.cache())
     // Synchronize the contents of the bucket and local (this deletes everything that isn't in local!)
     //.pipe(publisher.sync()) //leave cached references
     // And print the ouput, glorious
     .pipe($.awspublish.reporter());
-    // And update the default root object
-    //.pipe($.cloudfront(credentials));
 });
 
 // Run JS Lint against your JS
