@@ -155,9 +155,8 @@ gulp.task('deploy', function () {
     //.pipe($.if('*.js', $.awspublish.gzip({ ext: '.gz' })))
 
     // Parallelize the number of concurrent uploads, in this case 30
-    .pipe($.if('*.xml',
-      parallelize(publisher.publish(_.extend({'X-Robots-Tag': 'noindex'}, headers)), 30),
-      parallelize(publisher.publish(headers), 30)))
+    .pipe(parallelize(publisher.publish(headers), 30))
+      //parallelize(publisher.publish(_.extend({'X-Robots-Tag': 'noindex'}, headers)), 30),)
     //.pipe(parallelize(publisher.publish(headers), 30))
     // Have your files in the system cache so you don't have to recheck all the files every time
     .pipe(publisher.cache())
@@ -327,6 +326,6 @@ function invalidateSets(){
 
 
 gulp.task('invalidate', function(done){
-  //invalidateSets(['/merapi-merbabu/'], done);
-  invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
+  invalidateSets(invalidationSets.scripts(), invalidationSets.styles(), done);
+  //invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
 });
