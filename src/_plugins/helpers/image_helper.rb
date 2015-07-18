@@ -22,15 +22,21 @@ class ImageHelper
   end
 
   def size(path, post, name)
+    key = post + name
     begin
-      key = post + name
-      @photo[key] = FastImage.size(path) unless (@photo.has_key?(key) and @photo[key])
+      @photo[key] = get_image_size(path) unless (@photo.has_key?(key) and @photo[key])
       raise Exception unless @photo[key]
       return @photo[key]
     rescue Exception => e
       puts "Cannot resolve size of image #{path}"
       raise e
     end
+  end
+
+  def get_image_size(path)
+    localPath = File.join('static', URI.parse(path).path)
+    path = localPath if File.exist?(localPath)
+    FastImage.size(path)
   end
 
 

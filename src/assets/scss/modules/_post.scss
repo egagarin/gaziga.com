@@ -150,6 +150,8 @@
                 @include span-columns(6);
                 @include omega(2n);
             }
+
+            // todo don't resize for small screen
         }
         .pw {
             @include span-columns(12);

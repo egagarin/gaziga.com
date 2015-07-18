@@ -334,7 +334,6 @@ header.navigation {
             }
 
             button[type=submit] {
-                @include button(simple, lighten($navigation-search-background, 10));
                 position: absolute;
                 top: 0.3em;
                 right: 0.3em;
@@ -355,7 +354,6 @@ header.navigation {
             display: inline-block;
 
             input {
-                @include box-sizing(border-box);
                 display: block;
             }
         }

@@ -220,7 +220,12 @@ module Jekyll
               img = group[0]
               img_name = img['src'].split('/').last
               img['src'] = img_name
-              img.replace(Nokogiri.make(wrap_img img))
+              image = wrap_img img
+              image_width = get_img_size(img)[0]
+              if (image_width < 800) # it is currently 980 by design, but allow little upscale in edge case
+                image = "<div class=pwr style='max-width:#{image_width}px'>#{image}</div>"
+              end
+              img.replace(Nokogiri.make(image))
           else
               group.each_slice(2) {|pair|
                   pair[0].replace Nokogiri.make(wrap_group_img(pair))
@@ -243,7 +248,7 @@ module Jekyll
       end
 
       doc.css('p').find_all.each do |p|
-        if p.content.strip.empty?
+        if p.inner_html.strip.empty? &&
           p.remove
         end
       end
