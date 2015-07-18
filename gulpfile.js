@@ -22,6 +22,8 @@ var cloudfront = require('cloudfront');
 var glob = require("glob");
 var _ = require('lodash');
 var shell = require('gulp-shell');
+var Promise = require("bluebird");
+var rp = require('request-promise');
 // And define a variable that BrowserSync uses in it's function
 var bs;
 
@@ -325,7 +327,21 @@ function invalidateSets(){
 
 
 
+
 gulp.task('invalidate', function(done){
-  invalidateSets(invalidationSets.scripts(), invalidationSets.styles(), done);
-  //invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
+  //invalidateSets(invalidationSets.scripts(), invalidationSets.styles(), done);
+  invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
+});
+
+gulp.task('ping-sitemap', function(done){
+  var requests = [
+    "http://www.bing.com/ping?sitemap=",
+    "http://www.google.com/ping?sitemap=",
+    //"http://webmaster.yandex.com/site/map.xml?host="
+  ];
+  Promise.all(requests.map(function(r){
+    return rp(r + "http://gaziga.com/sitemap.xml");
+  })).then(function(results) {
+    console.log(results);
+  }).finally(done);
 });

@@ -52,6 +52,7 @@
                     padding: 0 5px;
                 }
                 .day-wr {
+                    clear: both;
                     font-family: $header-font-family;
                     @include span-columns(3);
 

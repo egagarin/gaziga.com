@@ -5,6 +5,7 @@
   "description": "Yeoman workflow for gaziga com",
   "dependencies": {},
   "devDependencies": {
+    "bluebird": "^2.9.34",
     "browser-sync": "^2.6.4",
     "cloudfront": "^0.3.3",
     "concurrent-transform": "^1.0.0",
@@ -46,6 +47,7 @@
     "node-bourbon": "^4.2.1-beta1",
     "node-neat": "^1.7.1-beta1",
     "replacestream": "^2.1.0",
+    "request-promise": "^0.4.2",
     "void": "^0.1.6"
   },
   "engines": {
