@@ -28,7 +28,7 @@ header.navigation {
     $navigation-submenu-width: 12em;
 
     background-color: $navigation-background;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
     height: $navigation-height;
     width: 100%;
     z-index: 999;
@@ -265,7 +265,7 @@ header.navigation {
         padding-left: $navigation-padding/2;
         clear: both;
         background: $navigation-background;
-        border-top: 1px solid rgba(0,0,0,0.05);
+        border-top: 1px solid rgba(255,255,255,0.05);
 
         .search-bar {
           width: 100%;
@@ -320,6 +320,10 @@ header.navigation {
             position: relative;
 
             input[type=search] {
+                &:focus{
+                  outline: none;
+                }
+                width: 100%;
                 background: $navigation-search-background;
                 border: $navigation-search-border;
                 padding: .6em .8em;

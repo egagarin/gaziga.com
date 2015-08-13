@@ -329,8 +329,9 @@ function invalidateSets(){
 
 
 gulp.task('invalidate', function(done){
-  //invalidateSets(invalidationSets.scripts(), invalidationSets.styles(), done);
-  invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
+  //invalidateSets(["/vipassana-v-tailande/"], done);
+  invalidateSets(invalidationSets.scripts(), invalidationSets.styles(), done);
+  //invalidateSets(['/'], invalidationSets.lastPost(), invalidationSets.prevPost(), invalidationSets.xml(), done);
 });
 
 gulp.task('ping-sitemap', function(done){
