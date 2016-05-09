@@ -20,7 +20,4 @@ script:
 after_success:
 - gulp deploy
 - gulp invalidate
-env:
-  global:
-  - secure: h2XFbHjxKQoKHcgewbc7q19HxQ64QpBBtL/ZP3Zlf6P0vfMENumcJby3l+0Mx6SdKZR1xcGdNmLYOCZgqwP6NV0hSUNx9WiwRjk9+onCgs41cKDYwR2dYfjbnNR6tXMUxDi3KeCL+hgWDxEdoJBMfe3V+vMfXjj6HbpaeJ8P2YU=
-  - secure: L0q/VI62+squxD+tTOKbvckAVlHwgnhsjVP1qfLxRY4CyQnTaSxGoeHfGoEK84bZS59xM/Dl6m3YaYHwpJe1bR0LL9owEzu0CwQhSLn+6SkGDYKUju+wUcaVTZPEYhXsIRjnz37ZDJ8f3Nv/V9GGfBrkRyqFcRrHX0g42yIuTFI=
+
