@@ -42,5 +42,4 @@ styles: ["/bower_components/elevation-profile/dist/elevation.profile.css"]
 * [Тиличо. Фотоотчет. ч2](/tilicho-lake-part2/)
 * [Мустанг на мотоцикле. Фотоотчет.](/himalayas-walking-and-riding/)
 
-PS: Скрипт для визуализации графиков высот выложил на [гитхаб](https://github.com/gagarych/elevation-profile). Feel free to use and fork. Потом может быть добавлю инструкцию по использованию.
 
