@@ -3840,6 +3840,51 @@ photo:
   kathmandu-namche/photo_8911.jpg:
   - 980
   - 653
+  namche-island-peak/photo_4834.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_4849.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_8884.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9013.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9041.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9130.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9134.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9163.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9189.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9212.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9214.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9240.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9250.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9262.jpg:
+  - 980
+  - 653
+  namche-island-peak/photo_9294.jpg:
+  - 980
+  - 653
 fb:
   /poezd-chiang-mai-bangkok: title.jpg
   /koh-chang-ranong: title.jpg
@@ -3933,6 +3978,7 @@ fb:
   /indonesia-volcanoes: title-fb.jpg
   /agung: title-fb.jpg
   /kathmandu-namche: title@2x.jpg
+  /namche-island-peak: title@2x.jpg
 post_thumb_sm:
   /zamboanga-sandakan: title-s@2x.jpg
   /motoladakh-nubra: title-s@2x.jpg
@@ -4026,6 +4072,7 @@ post_thumb_sm:
   /indonesia-volcanoes: title-s@2x.jpg
   /agung: title-s@2x.jpg
   /kathmandu-namche: title-s@2x.jpg
+  /namche-island-peak: title-s@2x.jpg
 post_thumb_lg:
   /sulug-island-and-turtle: title@2x.jpg
   /trusmadi-jungle: title@2x.jpg
@@ -4119,3 +4166,4 @@ post_thumb_lg:
   /indonesia-volcanoes: title@2x.jpg
   /agung: title@2x.jpg
   /kathmandu-namche: title@2x.jpg
+  /namche-island-peak: title@2x.jpg
