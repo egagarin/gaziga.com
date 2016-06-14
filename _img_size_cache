@@ -3885,6 +3885,63 @@ photo:
   namche-island-peak/photo_9294.jpg:
   - 980
   - 653
+  everest-bc/photo_090926.jpg:
+  - 484
+  - 484
+  everest-bc/photo_9573.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9578.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9623.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9716.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9747.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9326.jpg:
+  - 484
+  - 484
+  everest-bc/photo_9753.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9337.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9764.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9372.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9377.jpg:
+  - 980
+  - 653
+  everest-bc/photo_4738.jpg:
+  - 980
+  - 653
+  everest-bc/photo_4908.jpg:
+  - 980
+  - 735
+  everest-bc/photo_9303.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9416.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9475.jpg:
+  - 980
+  - 653
+  everest-bc/photo_9523.jpg:
+  - 980
+  - 653
+  everest-bc/photo_2.jpg:
+  - 980
+  - 653
 fb:
   /poezd-chiang-mai-bangkok: title.jpg
   /koh-chang-ranong: title.jpg
@@ -3979,6 +4036,7 @@ fb:
   /agung: title-fb.jpg
   /kathmandu-namche: title@2x.jpg
   /namche-island-peak: title@2x.jpg
+  /everest-bc: title@2x.jpg
 post_thumb_sm:
   /zamboanga-sandakan: title-s@2x.jpg
   /motoladakh-nubra: title-s@2x.jpg
@@ -4073,6 +4131,7 @@ post_thumb_sm:
   /agung: title-s@2x.jpg
   /kathmandu-namche: title-s@2x.jpg
   /namche-island-peak: title-s@2x.jpg
+  /everest-bc: title-s@2x.jpg
 post_thumb_lg:
   /sulug-island-and-turtle: title@2x.jpg
   /trusmadi-jungle: title@2x.jpg
@@ -4167,3 +4226,4 @@ post_thumb_lg:
   /agung: title@2x.jpg
   /kathmandu-namche: title@2x.jpg
   /namche-island-peak: title@2x.jpg
+  /everest-bc: title@2x.jpg
