@@ -3942,6 +3942,63 @@ photo:
   everest-bc/photo_2.jpg:
   - 980
   - 653
+  cho-la-pass/9775.jpg:
+  - 980
+  - 653
+  cho-la-pass/9782.jpg:
+  - 980
+  - 653
+  cho-la-pass/9820.jpg:
+  - 980
+  - 653
+  cho-la-pass/9832.jpg:
+  - 980
+  - 778
+  cho-la-pass/9849.jpg:
+  - 980
+  - 653
+  cho-la-pass/9867.jpg:
+  - 980
+  - 653
+  cho-la-pass/9909.jpg:
+  - 980
+  - 653
+  cho-la-pass/9930.jpg:
+  - 980
+  - 653
+  cho-la-pass/0013.jpg:
+  - 980
+  - 653
+  cho-la-pass/0028.jpg:
+  - 980
+  - 653
+  cho-la-pass/0031.jpg:
+  - 980
+  - 653
+  cho-la-pass/0049.jpg:
+  - 980
+  - 653
+  cho-la-pass/0064.jpg:
+  - 980
+  - 653
+  cho-la-pass/0092.jpg:
+  - 980
+  - 653
+  cho-la-pass/0103.jpg:
+  - 980
+  - 653
+  cho-la-pass/0104.jpg:
+  - 980
+  - 653
+  cho-la-pass/0180.jpg:
+  - 980
+  - 653
+  cho-la-pass/0205.jpg:
+  - 980
+  - 653
+  cho-la-pass/0036.jpg:
+  - 980
+  - 653
 fb:
   /poezd-chiang-mai-bangkok: title.jpg
   /koh-chang-ranong: title.jpg
@@ -4037,6 +4094,7 @@ fb:
   /kathmandu-namche: title@2x.jpg
   /namche-island-peak: title@2x.jpg
   /everest-bc: title@2x.jpg
+  /cho-la-pass: title@2x.jpg
 post_thumb_sm:
   /zamboanga-sandakan: title-s@2x.jpg
   /motoladakh-nubra: title-s@2x.jpg
@@ -4132,6 +4190,7 @@ post_thumb_sm:
   /kathmandu-namche: title-s@2x.jpg
   /namche-island-peak: title-s@2x.jpg
   /everest-bc: title-s@2x.jpg
+  /cho-la-pass: title-s@2x.jpg
 post_thumb_lg:
   /sulug-island-and-turtle: title@2x.jpg
   /trusmadi-jungle: title@2x.jpg
@@ -4227,3 +4286,4 @@ post_thumb_lg:
   /kathmandu-namche: title@2x.jpg
   /namche-island-peak: title@2x.jpg
   /everest-bc: title@2x.jpg
+  /cho-la-pass: title@2x.jpg
