@@ -1,7 +1,7 @@
 **/.idea/
 tools/
 /src/bower_components/
-
+.vscode
 gulpfile_old.js
 
 node_modules
