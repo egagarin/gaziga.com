@@ -1,12 +1,12 @@
 # Site settings
 title: Gaziga
-description: Орбитальная станция им. Гагарина
-tagline: Орбитальная станция им. Гагарина
-email: gagarych@gmail.com
+description: 
+tagline: 
+email: gagarin@gaziga.com
 description: Носим рюкзаки, варим макароны
 url: http://localhost:3000
 twitter_username: gaziga
-github_username:  gagarych
+github_username:  shvendala
 gaNumber: UA-24364657-1
 
 # Build settings
@@ -29,7 +29,7 @@ location: Wroclaw
 
 owner:
   name: gagarin
-  email: gagarych@gmail.com
+  email: gagarin@gaziga.com
   bio:
   twitter: gagarych
 
