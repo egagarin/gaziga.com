@@ -80,7 +80,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redcarpet (3.2.3)
+    redcarpet (3.5.1)
     russian (0.6.0)
       i18n (>= 0.5.0)
     s3_website (2.8.6)
